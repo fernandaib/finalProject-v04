@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>4-S|Styling</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="icon" type="image/ico" href="../images/favicon-32.png">
+        
+        <!--Responsive website -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- This is how we link to an external css file -->
+        
+        <!--EXTERNAL CSS -->
+        <link rel="stylesheet" href="../css/reset.css"> 
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Figtree:wght@400;800&family=Source+Code+Pro:wght@400;800&display=swap" rel="stylesheet">
+        
+        <!--EXTERNAL CSS -->        
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/prism.css">
+            
+        <!-- For Schools framework -->             
+        <link rel="stylesheet" href="../css/for-schools-styling.css">     
+              
+                      
+                               
+    </head>
+    
+    <body id="page-top">
+        <header class="header">
+
+            <a href="../index.html">
+                <img src="../images/logoWhite.svg" alt="logo" class="mainLogo">                
+            </a>
+
+            <nav class="navigation">
+                <input type="checkbox" class="toggleMenu">
+                <div class="hamburger"></div>
+
+                <ul class="menu">
+                    <li><a href="../index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="intro.html"><i class="fa-solid fa-flag-checkered"></i>Start</a></li>
+                    <li><i class="fa-solid fa-paintbrush"></i>Styling</li>
+                    <li><a href="components.html"><i class="fa-solid fa-puzzle-piece"></i>Components</a></li>
+                    <li><a href="demo.html"><i class="fa-solid fa-laptop-code"></i>Demo</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+
+                      
+            <section class="aside-text" id="aside-menu">                
+                <h2>Styling</h2>                
+                <ul class="aside-list">
+                    <li><a href="#styling-reset">Reset</a></li>
+                    <li><a href="#styling-grid">Grid</a></li>
+                    <li><a href="#styling-typing">Typography</a></li>
+                    <li><a href="#styling-table">Table</a></li>
+                    <li><a href="#styling-forms">Forms</a></li>
+                    <li><a href="#styling-btn">Buttons</a></li>
+                    <li><a href="#styling-img">Images</a></li>
+                    <li><a href="#styling-helper">Helper</a></li>
+                    <li><a href="#styling-noprint">No-print</a></li>
+                    <li><a href="#styling-icons">Icons</a></li> 
+                    
+                </ul>                    
+            </section>  
+            
+            <div class="aside-hide" onclick="myFunction()">
+                <i class="fa-solid fa-caret-right" id="open"></i> 
+                <i class="fa-solid fa-caret-left" id="close"></i>
+            </div>
+                   
+            
+        </aside>
+
+        <main class="main-framework">
+            
+            <article class="article-01">
+                <h2>Styling</h2>
+<!-- reset  -->
+                <section id="styling-reset">
+                    <h3>Reset</h3>
+                    <p>Link <code class="code-template">for-schools-styling.css</code> file through <code class="code-template">&lt;link&gt;</code> tag in the <code class="code-template">&lt;head&gt;</code>.</p>   
+                    <br>
+                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
+
+                    <pre>
+                                <code class="language-html">
+&lt;!doctype html&gt;                                    
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;For Schools demo&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/for-schools-styling.css"&gt;
+    &lt;link rel="stylesheet" href="css/for-schools.css"&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="scripts/for-schools.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                                </code>
+                            </pre>
+                                         
+                </section>
+<!-- Grid -->
+                <section id="styling-grid">
+                    <h3>Grid</h3>
+                    <p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Give it a try and resize the browser.</p>    
+                    <br>
+                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
+                    <section class="sample">
+                        <section class="grid-sample">
+                            <section class="grid-inner-sample">
+                                <h2>Grid Layout</h2>
+                                <div class="grid-container" id="example-grid">
+                                    <div class="row">
+                                        <div class="columns-12">Twelve</div>
+                                    </div>
+                        
+                                    <div class="row">
+                                        <div class="columns-1">One</div>
+                                        <div class="columns-11">Eleven </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="columns-2">Two</div>
+                                        <div class="columns-10">Ten</div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="columns-3">Three</div>
+                                        <div class="columns-9">Nine</div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="columns-4">Four</div>
+                                        <div class="columns-8">Eight</div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="columns-5">Five</div>
+                                        <div class="columns-7">Seven</div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="columns-6">Six</div>
+                                        <div class="columns-6">Six</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="columns-7">Seven</div>
+                                        <div class="columns-5">Five</div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="columns-8">Eight</div>
+                                        <div class="columns-4">Four</div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="columns-9">Nine</div>
+                                        <div class="columns-3">Three</div>
+                                    </div>
+                        
+                                    <div class="row">
+                                        <div class="columns-10">Ten</div>
+                                        <div class="columns-2">Two</div>
+                                    </div>
+                        
+                                    <div class="row">
+                                        <div class="columns-11">Eleven</div>
+                                        <div class="columns-1">One</div>
+                                    </div>
+                    
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+                        
+                    <pre>
+                        <code class="language-html">
+&lt;section class="grid-sample"&gt;
+    &lt;section class="grid-inner-sample"&gt;
+        &lt;h2&gt;Grid Layout&lt;/h2&gt;
+        &lt;div class="grid-container" id="example-grid"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="columns-12"&gt;Twelve&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="row"&gt;
+                &lt;div class="columns-1"&gt;One&lt;/div&gt;
+                &lt;div class="columns-11"&gt;Eleven &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="row"&gt;
+                &lt;div class="columns-2"&gt;Two&lt;/div&gt;
+                &lt;div class="columns-10"&gt;Ten&lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="row"&gt;
+                &lt;div class="columns-3"&gt;Three&lt;/div&gt;
+                &lt;div class="columns-9"&gt;Nine&lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="row"&gt;
+                &lt;div class="columns-4"&gt;Four&lt;/div&gt;
+                &lt;div class="columns-8"&gt;Eight&lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="row"&gt;
+                &lt;div class="columns-5"&gt;Five&lt;/div&gt;
+                &lt;div class="columns-7"&gt;Seven&lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="row"&gt;
+                &lt;div class="columns-6"&gt;Six&lt;/div&gt;
+                &lt;div class="columns-6"&gt;Six&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="columns-7"&gt;Seven&lt;/div&gt;
+                &lt;div class="columns-5"&gt;Five&lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="row"&gt;
+                &lt;div class="columns-8"&gt;Eight&lt;/div&gt;
+                &lt;div class="columns-4"&gt;Four&lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="row"&gt;
+                &lt;div class="columns-9"&gt;Nine&lt;/div&gt;
+                &lt;div class="columns-3"&gt;Three&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="row"&gt;
+                &lt;div class="columns-10"&gt;Ten&lt;/div&gt;
+                &lt;div class="columns-2"&gt;Two&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="row"&gt;
+                &lt;div class="columns-11"&gt;Eleven&lt;/div&gt;
+                &lt;div class="columns-1"&gt;One&lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/section&gt;                        
+                        </code>
+                    </pre>
+                </section>
+<!-- Typography  -->
+                <section id="styling-typing">
+                    <h3>Typography</h3>
+                    <p>Type is all set with the rems, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code>  font-size property.</p>  
+                    <br>
+                    <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Poppins">Poppins</a> served by Google.</p>
+                    <br>
+                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>  
+                    <section class="sample">
+                        <section class="typography-sample">
+                            <section class="typography-inner-sample">
+                                <h2 >Typography</h2>
+                                <section class="ff-poppins">
+                                    <h1 class="ff-poppins">Poppins</h1>
+                                    <h1 class="ff-poppins">Heading 1</h1>
+                                    <h2 class="ff-poppins">Heading 2</h2>
+                                    <h3 class="ff-poppins">Heading 3</h3>
+                                    <h4 class="ff-poppins">Heading 4</h4>
+                                    <h5 class="ff-poppins">Heading 5</h5>
+                                    <h6 class="ff-poppins">Heading 6</h6>
+                                    <p class="fw-800">Font Weight 800</p>
+                                    <p class="fw-700">Font Weight 700</p>
+                                    <p class="fw-600">Font Weight 600</p>
+                                    <p class="fw-500">Font Weight 500</p>
+                                    <p class="fw-400">Font Weight 400</p>
+                                    <p class="fw-300">Font Weight 300</p>
+                                    <p class="fw-200">Font Weight 200</p>
+                                    <p class="fw-100">Font Weight 100</p>
+                                </section>
+            
+                            </section>
+                        </section>
+                    </section>
+                        
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+     &lt;section class="ff-poppins"&gt;
+        &lt;h1 class="ff-poppins"&gt;Poppins&lt;/h1&gt;
+        &lt;h1 class="ff-poppins"&gt;Heading 1&lt;/h1&gt;
+        &lt;h2 class="ff-poppins"&gt;Heading 2&lt;/h2&gt;
+        &lt;h3 class="ff-poppins"&gt;Heading 3&lt;/h3&gt;
+        &lt;h4 class="ff-poppins"&gt;Heading 4&lt;/h4&gt;
+        &lt;h5 class="ff-poppins"&gt;Heading 5&lt;/h5&gt;
+        &lt;h6 class="ff-poppins"&gt;Heading 6&lt;/h6&gt;
+        &lt;p class="fw-800"&gt;Font Weight 800&lt;/p&gt;
+        &lt;p class="fw-700"&gt;Font Weight 700&lt;/p&gt;
+        &lt;p class="fw-600"&gt;Font Weight 600&lt;/p&gt;
+        &lt;p class="fw-500"&gt;Font Weight 500&lt;/p&gt;
+        &lt;p class="fw-400"&gt;Font Weight 400&lt;/p&gt;
+        &lt;p class="fw-300"&gt;Font Weight 300&lt;/p&gt;
+        &lt;p class="fw-200"&gt;Font Weight 200&lt;/p&gt;
+        &lt;p class="fw-100"&gt;Font Weight 100&lt;/p&gt;                                                           
+    &lt;/section&gt;      
+&lt;/body&gt;
+                        </code>
+                    </pre>
+                </section>
+<!-- Table  -->
+                <section id="styling-table">
+                    <h3>Table</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>  
+                    <br>
+                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>  
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;p&gt;Code is here&lt;/p&gt;        
+&lt;/body&gt;
+                        </code>
+                    </pre>
+
+                    
+                </section>
+<!-- Forms -->
+                <section id="styling-forms">
+                    <h3>Forms</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>  
+                    <br>
+                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>  
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;p&gt;Code is here&lt;/p&gt;        
+&lt;/body&gt;
+                        </code>
+                    </pre>
+                </section>
+<!-- Buttons -->
+                <section id="styling-btn">
+                    <h3>Buttons</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>    
+                    <br>
+                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;p&gt;Code is here&lt;/p&gt;        
+&lt;/body&gt;
+                        </code>
+                    </pre>                  
+                </section>
+<!-- Images  -->
+                <section id="styling-img">
+                    <h3>Responsive Images</h3>
+                    <p>Responsive images will automatically adjust to fit the size of the screen. Add the class responsive-img to your img element and resize the browser window to see the responsive effect:</p>    
+                    <br>
+                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
+                    <section class="sample">
+                        <section class="images-sample">
+                            <section class="images-inner-sample">
+                                <h2>Responsive Images</h2>
+                                <div>
+                                    <img src="../images/classroom-g672134832_1280.jpg" alt="classroom" class="responsive-img">
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+                        
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;p&gt;Code is here&lt;/p&gt;
+    &lt;img src="/images/classroom" alt="classroom" class="responsive-img"&gt;        
+&lt;/body&gt;
+                        </code>
+                    </pre>              
+
+                    
+                </section>
+<!-- Helper -->
+                <section id="styling-helper">
+                    <h3>Helper</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>    
+                    <br>
+                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;p&gt;Code is here&lt;/p&gt;        
+&lt;/body&gt;
+                        </code>
+                    </pre>          
+                </section>
+<!-- No Print  -->
+                <section id="styling-noprint">
+                    <h3>No-print</h3>
+                    <p>The noPrint class is used to hide an element when printing web pages. Insert the noPrint class into the element that needs to hidden at printing.</p>    
+                    <br>
+                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;p class="noPrint"&gt;Code is here&lt;/p&gt;        
+&lt;/body&gt;
+                        </code>
+                    </pre>            
+                </section>
+<!-- Icons  -->
+                <section id="styling-icons">
+                    <h3>Icons</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>    
+                    <br>
+                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;p&gt;Code is here&lt;/p&gt;        
+&lt;/body&gt;
+                        </code>
+                    </pre>            
+                </section>
+                
+            </article>
+
+            
+
+            <article class="hand-up">
+                <a href="#page-top"><i class="fa-solid fa-hand-pointer"></i></a>                                
+            </article>
+            
+        </main>
+
+        <footer class="footer">
+            <section class="contact">
+                <section class="communication">
+                    <h2 class="footerTitle">Contact Us</h2>
+                    <ul class="commIcons">
+                        <li><a href="mailto:contact@fourschools.com"><i class="fa-regular fa-envelope"></i>contact@fourschools.com</a></li>
+                        <li><i class="fa-solid fa-phone-flip"></i>(+1)123456789</li>
+                        <li><i class="fa-solid fa-location-dot"></i> San Diego,CA - USA</li>
+                    </ul>                   
+                </section>
+
+                <section class="socialMedia">
+                    <h2 class="footerTitle">Follow Us</h2>
+                    <ul class="socialIcons">
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+
+            <section class="bottom">
+                <p>&copy; Copyright 2023</p>
+                <p>Powered by For Schools</p>
+            </section>            
+        </footer>   
+
+        <!-- Script file -->
+        <script src="scripts/jquery-3.6.3.min.js"></script>
+        <script src="../scripts/prism.js"></script>
+        <script src="../scripts/script.js"></script> 
+       
+        
+    </body>
+
+
+</html>
