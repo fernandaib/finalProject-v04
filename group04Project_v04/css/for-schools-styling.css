@@ -26,12 +26,12 @@
   --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
     
   /* font-size upgrade*/
-    --fs-01: clamp(3rem, 3.5vw, 4rem);
-    --fs-02: clamp(2.5rem, 3vw, 3.5rem);
-    --fs-03: clamp(2rem, 2.5vw, 3rem);
-    --fs-04: clamp(1.5rem, 2vw, 2.5rem); 
-    --fs-05: clamp(1rem, 1.5vw, 2rem); 
-    --fs-06: clamp(.5rem, 1vw, 1.5rem);           
+  --fs-01: clamp(3rem, 3.5vw, 4rem);
+  --fs-02: clamp(2.5rem, 3vw, 3.5rem);
+  --fs-03: clamp(2rem, 2.5vw, 3rem);
+  --fs-04: clamp(1.5rem, 2vw, 2.5rem); 
+  --fs-05: clamp(1rem, 1.5vw, 2rem); 
+  --fs-06: clamp(.5rem, 1vw, 1.5rem);           
 
 }
 
@@ -144,16 +144,31 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
 .text-nowrap          { word-wrap: normal;}
 
 /*----- Font Weight ----- */
-.fw-900               { font-weight: var(--fw-900);}
-.fw-800               { font-weight: var(--fw-800);}
-.fw-700               { font-weight: var(--fw-700);}
-.fw-600               { font-weight: var(--fw-600);}
-.fw-500               { font-weight: var(--fw-500);}
-.fw-400               { font-weight: var(--fw-400);}
-.fw-300               { font-weight: var(--fw-300);}
-.fw-200               { font-weight: var(--fw-200);}
-.fw-100               { font-weight: var(--fw-100);}
+.font-thin            {font-weight: var(--fw-100);}
+.font-extralight      {font-weight: var(--fw-200);}
+.font-light           {font-weight: var(--fw-300);}
+.font-normal          {font-weight: var(--fw-400);}
+.font-medium          {font-weight: var(--fw-500);}
+.font-semibold        {font-weight: var(--fw-600);}
+.font-bold            {font-weight: var(--fw-700);}
+.font-extrabold       {font-weight: var(--fw-800);}
 
+/* Styling HTML elements */
+.text-bolded          {font-weight: bold;}
+.text-emphasized      {font-style: italic;}
+.text-underlined      {text-decoration: underline;}
+.address              {letter-spacing: .5px;}
+
+/*----- Blockquote ----- */
+.blockquote           {font-size: 2rem;font-weight: 200;}
+.blockquote-footer    {font-size: 1rem; font-weight: 300; color:#1e1b1b;}
+
+/*----- Lists ----- */
+ul.unordered-list     {list-style: circle inside; }
+ol.ordered-list       {list-style: lower-alpha inside; }
+ol, ul                {padding-left: 0;margin-top: 0; }
+ul ul, ul ol, ol ol, ol ul {margin: 1.5rem 0 1.5rem 3rem;font-size: 85%; }
+li                    {margin-bottom: 1rem; }
 
 /*----- Tables ----- */
 th, td                                  {padding: 12px 15px; text-align: left;border-bottom: 1px solid #E1E1E1; }
@@ -193,6 +208,10 @@ th:last-child, td:last-child            {padding-right: 0;}
 
 
 
+
+
+
+
 /*---------- Fonts upgrade. Styling page: Typography section ----------*/
 
 .ff-poppins h1,
@@ -200,37 +219,31 @@ th:last-child, td:last-child            {padding-right: 0;}
 .ff-poppins h3,
 .ff-poppins h4,
 .ff-poppins h5,
-.ff-poppins h6{    
-    font-family: var(--ff-poppins);    
-    color: hsl(var(--clr-dark));    
-}
+.ff-poppins h6      {font-family: var(--ff-poppins);color: hsl(var(--clr-dark));}
 
-.ff-poppins h1{
-    font-size: var(--fs-01);
-}
-
-.ff-poppins h2{
-    font-size: var(--fs-02);
-    text-shadow: none;
-}
-
-.ff-poppins h3{
-    font-size: var(--fs-03);
-    text-decoration: none;    
-    margin-top: 0;
-    border-bottom: none;    
-}
-
-.ff-poppins h4{
-    font-size: var(--fs-04);    
-}
-
-.ff-poppins h5{
-    font-size: var(--fs-05);    
-}
-
-.ff-poppins h6{
-    font-size: var(--fs-06);    
-}
+.ff-poppins h1      {font-size: var(--fs-01);}
+.ff-poppins h2      {font-size: var(--fs-02);text-shadow: none;}
+.ff-poppins h3      {font-size: var(--fs-03);text-decoration: none; margin-top: 0;  border-bottom: none;}
+.ff-poppins h4      {font-size: var(--fs-04);}
+.ff-poppins h5      {font-size: var(--fs-05);}
+.ff-poppins h6      {font-size: var(--fs-06);}
 
 
+
+/* --------------------------------- */
+/* Media Queries                     */
+/* --------------------------------- */
+
+/*----- Extra-Small devices (portrait phones, less than 576px) ----- */
+ 
+/*----- Small devices (landscape phones, 576px and up) ----- */
+@media (min-width: 576px) { ... }
+
+/*----- Medium devices (tablets, 768px and up) ----- */ 
+@media (min-width: 768px) { ... }
+
+/*----- Large devices (desktops, 992px and up) ----- */
+@media (min-width: 992px) { ... }
+
+/*----- X-Large devices (large desktops, 1200px and up) ----- */ 
+@media (min-width: 1200px) { ... }
