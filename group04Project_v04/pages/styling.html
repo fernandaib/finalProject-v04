@@ -89,7 +89,7 @@
             <article class="article-01">
                 <h2>Styling</h2>
 <!-- reset  -->
-                <section id="styling-reset">
+                <section class="styling" id="styling-reset">
                     <h3>Reset</h3>
                     <p>Link <code class="code-template">for-schools-styling.css</code> file through <code class="code-template">&lt;link&gt;</code> tag in the <code class="code-template">&lt;head&gt;</code>.</p>   
                     <br>
@@ -117,10 +117,11 @@
                                          
                 </section>
 <!-- Grid -->
-                <section id="styling-grid">
+                <section class="styling" id="styling-grid">
                     <h3>Grid</h3>
-                    <p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Give it a try and resize the browser.</p>    
-                    <br>
+                    <p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. To utilize the 12-column grid apply the <span class="color-pink">grid-container </span>.class to your wrapper element. The syntax is simple and it makes coding responsive much easier. Give it a try and resize the browser.</p>    
+                    
+                    <p>To implement a container that is larger than the 960px width, apply the  <span class="color-pink">.container</span> class to your wrapper element. The .container will implement a container with a max-width of 1280px instead.   </p>
                     <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
                     <section class="sample">
                         <section class="grid-sample">
@@ -261,21 +262,20 @@
                     </pre>
                 </section>
 <!-- Typography  -->
-                <section id="styling-typing">
+                <section class="styling" id="styling-typing">
                     <h3>Typography</h3>
                     <p>Type is all set with the rems, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code>  font-size property.</p>  
-                    <br>
-                    <p><span class="text-bolded">Fonts/ Headings:</span>    The typography font base by default is <a href="http://www.google.com/fonts/specimen/Poppins">Poppins</a> served by Google. The font may be changed to <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro">Source Sans Pro</a> by applying the class ff-source-sans-pro to the <code>&lt;html&gt;</code> element(s). If you wish to change the default font to Source Sans Pro apply the class ff-source-sans-pro to the <code>&lt;body&gt;</code> tag. </p>
-                    <br>
-                    <p><span class="text-bolded">Font Weights and Stylings:</span> Change the font-weight or font-style of text with the utilities listed below. Font-style utilities are prefixed as .text-* and font-weight utilities are prefixed as .font-*.</p>
-                    <br> 
-                    <p> <span class="text-bolded">Text-Alignment:</span>  Easily realign text to components with text alignment classes. For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system. Text-Alignment utilities are prefixed as .text-* </p>
-                    <br>
-                    <p><span class="text-bolded">Text-Transform:</span> Transform text in components with text capitalization classes. Text-Transform utilities are also prefixed as .text-* </p>
-                    <br> 
-                    <p><span class="text-bolded">Letter Spacing:</span> Change the letter spacing with .letter-spacing-* utilities.</p>
-                    <br>
-
+                  
+                    <p><span class="text-bolded">Fonts/ Headings:</span>    The typography font base by default is <a href="http://www.google.com/fonts/specimen/Poppins">Poppins</a> served by Google. The font may be changed to <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro">Source Sans Pro</a> by applying the class <span class="color-pink">.ff-source-sans-pro</span> to the <code>&lt;html&gt;</code> element(s). If you wish to change the default font to Source Sans Pro apply the class.ff-source-sans-pro to the <code>&lt;body&gt;</code> tag. If you would like to use both fonts interchangeably, apply the class <span class="color-pink">.ff-poppins</span> or <span class="color-pink">.ff-source-sans-pro</span> to the <code>&lt;html&gt;</code> element(s) you would like to style.</p>
+                    
+                    <p><span class="text-bolded">Font Weights and Stylings:</span> Change the font-weight or font-style of text with the utilities listed below. Font-style utilities are prefixed as <span class="color-pink"> .text-* </span>and font-weight utilities are prefixed as <span class="color-pink">.font-*</span>.</p>
+                    
+                    <p> <span class="text-bolded">Text-Alignment:</span>  Easily realign text to components with text alignment classes. For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system. Text-Alignment utilities are prefixed as <span class="color-pink">.text-*</span>.</p>
+                    
+                    <p><span class="text-bolded">Text-Transform:</span> Transform text in components with text capitalization classes. Text-Transform utilities are also prefixed as <span class="color-pink">.text-* </span>.</p>
+                    
+                    <p><span class="text-bolded">Letter Spacing:</span> Change the letter spacing with <span class="color-pink">.letter-spacing-*</span> utilities.</p>
+                    
                     <section class="sample">
                         <section class="typography-sample">
                             <section class="typography-inner-sample">
@@ -407,51 +407,179 @@
                     </pre>
                 </section>
 <!-- Table  -->
-                <section id="styling-table">
+                <section class="styling" id="styling-table">
                     <h3>Table</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>  
+                    <p><span class="text-bolded">Regular Tables:</span> Properly markup the <code>&lt;html&gt;</code> with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a table. Add the class <span class="color-pink">.table</span> to <code>&lt;table&gt;</code>.</p> 
+                    
+                    <p><span class="text-bolded">Striped tables: </span>Use the <span class="color-pink">table-striped</span> class to <code>&lt;table&gt;</code> to add zebra striped style. For hoverable table rows, you can add the  <span class="color-pink">table-hover</span> class to enable hover style. </p>
+
+                    <p><span class="text-bolded">Bordered tables: </span>Use the <span class="color-pink">table-bordered</span> class to <code>&lt;table&gt;</code> to add a bordered style. </p>
+
+                    <p><span class="text-bolded">Responsive Table: </span> A responsive table will display a horizontal scroll bar if the screen is too small to display the full content. Resize the browser window to see the effect.  To add this feature to your table, add a <code>&lt;div&gt;</code> wrapper to the table with the class <span class="color-pink">.table-container</span> around the table and then add the  <span class="color-pink">.table-responsive</span> class to <code>&lt;table&gt;</code> element. I recommend this method for all tables to add in responsiveness!</p>
+
+
                     <br>
                     <section class="sample">
                         <section class="table-sample">
                             <section class="table-inner-sample">
-                                <h2>Table  </h2>
-                                <h3>Academy Contact Information</h3>
-                                <table>
-                                    <thead>
-                                      <tr>
-                                        <th>Name</th>
-                                        <th>Staff Position</th>
-                                        <th>Phone Number</th>
-                                        <th>Email Address</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>Abigail Norman</td>
-                                        <td>Principal</td>
-                                        <td>619-555-5550</td>
-                                        <td>abigail.norman@sdccd.edu</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Ed Perez</td>
-                                        <td>Vice Principal</td>
-                                        <td>619-555-5551</td>
-                                        <td>ed.perez@sdccd.edu</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Sophia Wright</td>
-                                        <td>Office Administrator</td>
-                                        <td>619-555-5552</td>
-                                        <td>sophia.wright@sdccd.edu</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Samantha Fields</td>
-                                        <td>Teacher</td>
-                                        <td>619-555-5553</td>
-                                        <td>samantha.fields@sdccd.edu</td>
-                                      </tr>
-                                    </tbody>
-                                </table>
+                                <h2>Table</h2>
+                                <h3>Regular Table</h3>
+                                <section>
+                                    <div class="table-container">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Staff Position</th>
+                                            <th>Phone Number</th>
+                                            <th>Email Address</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Ed Perez</td>
+                                            <td>Vice Principal</td>
+                                            <td>619-555-5551</td>
+                                            <td>ed.perez@sdccd.edu</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sophia Wright</td>
+                                            <td>Office Administrator</td>
+                                            <td>619-555-5552</td>
+                                            <td>sophia.wright@sdccd.edu</td>
+                                        </tr>
+                                       
+                                        </tbody>
+                                    </table>
+                                </div>
+                                </section>
+
+                                <h3>Striped Table</h3>
+                                <section>
+                                    <div class="table-container">
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Staff Position</th>
+                                                <th>Phone Number</th>
+                                                <th>Email Address</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="active">
+                                                <td>Abigail Norman</td>
+                                                <td>Principal</td>
+                                                <td>619-555-5550</td>
+                                                <td>abigail.norman@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ed Perez</td>
+                                                <td>Vice Principal</td>
+                                                <td>619-555-5551</td>
+                                                <td>ed.perez@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sophia Wright</td>
+                                                <td>Office Administrator</td>
+                                                <td>619-555-5552</td>
+                                                <td>sophia.wright@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Samantha Fields</td>
+                                                <td>Teacher</td>
+                                                <td>619-555-5553</td>
+                                                <td>samantha.fields@sdccd.edu</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+
+                                <h3>Bordered Table</h3>
+                                <section>
+                                    <div class="table-container">   
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Staff Position</th>
+                                                <th>Phone Number</th>
+                                                <th>Email Address</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Abigail Norman</td>
+                                                <td>Principal</td>
+                                                <td>619-555-5550</td>
+                                                <td>abigail.norman@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ed Perez</td>
+                                                <td>Vice Principal</td>
+                                                <td>619-555-5551</td>
+                                                <td>ed.perez@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sophia Wright</td>
+                                                <td>Office Administrator</td>
+                                                <td>619-555-5552</td>
+                                                <td>sophia.wright@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Samantha Fields</td>
+                                                <td>Teacher</td>
+                                                <td>619-555-5553</td>
+                                                <td>samantha.fields@sdccd.edu</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+
+                                <h3>Responsive Table</h3>
+                                <section>
+                                    <div class="table-container">
+                                        <table class="table table-responsive table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Staff Position</th>
+                                                <th>Phone Number</th>
+                                                <th>Email Address</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Abigail Norman</td>
+                                                <td>Principal</td>
+                                                <td>619-555-5550</td>
+                                                <td>abigail.norman@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ed Perez</td>
+                                                <td>Vice Principal</td>
+                                                <td>619-555-5551</td>
+                                                <td>ed.perez@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sophia Wright</td>
+                                                <td>Office Administrator</td>
+                                                <td>619-555-5552</td>
+                                                <td>sophia.wright@sdccd.edu</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Samantha Fields</td>
+                                                <td>Teacher</td>
+                                                <td>619-555-5553</td>
+                                                <td>samantha.fields@sdccd.edu</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+
                             </section>
                         </section>
                     </section>
@@ -459,9 +587,74 @@
                     <pre>
                         <code class="language-html">
 &lt;body&gt;
-    &lt;table&gt;
+    &lt;----- Regular Table -----&gt;
+    &lt;table class="table"&gt;
         &lt;thead&gt;
+            &lt;tr &gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Staff Position&lt;/th&gt;
+                &lt;th&gt;Phone Number&lt;/th&gt;
+                &lt;th&gt;Email Address&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
             &lt;tr&gt;
+                &lt;td&gt;Ed Perez&lt;/td&gt;
+                &lt;td&gt;Vice Principal&lt;/td&gt;
+                &lt;td&gt;619-555-5551&lt;/td&gt;
+                &lt;td&gt;ed.perez@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;                
+            &lt;tr&gt;
+                &lt;td&gt;Sophia Wright&lt;/td&gt;
+                &lt;td&gt;Office Administrator&lt;/td&gt;
+                &lt;td&gt;619-555-5552&lt;/td&gt;
+                &lt;td&gt;sophia.wright@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;                          
+
+    &lt;----- Striped Table -----&gt;
+    &lt;table class="table table-striped table-hover"&gt;
+        &lt;thead&gt;
+            &lt;tr &gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Staff Position&lt;/th&gt;
+                &lt;th&gt;Phone Number&lt;/th&gt;
+                &lt;th&gt;Email Address&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr class="active"&gt;
+                &lt;td&gt;Abigail Norman&lt;/td&gt;
+                &lt;td&gt;Principal&lt;/td&gt;
+                &lt;td&gt;619-555-5550&lt;/td&gt;
+                &lt;td&gt;abigail.norman@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Ed Perez&lt;/td&gt;
+                &lt;td&gt;Vice Principal&lt;/td&gt;
+                &lt;td&gt;619-555-5551&lt;/td&gt;
+                &lt;td&gt;ed.perez@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Sophia Wright&lt;/td&gt;
+                &lt;td&gt;Office Administrator&lt;/td&gt;
+                &lt;td&gt;619-555-5552&lt;/td&gt;
+                &lt;td&gt;sophia.wright@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Samantha Fields&lt;/td&gt;
+                &lt;td&gt;Teacher&lt;/td&gt;
+                &lt;td&gt;619-555-5553&lt;/td&gt;
+                &lt;td&gt;samantha.fields@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+    
+    &lt;----- Bordered Table -----&gt;
+    &lt;table class="table table-bordered"&gt;
+        &lt;thead&gt;
+            &lt;tr &gt;
                 &lt;th&gt;Name&lt;/th&gt;
                 &lt;th&gt;Staff Position&lt;/th&gt;
                 &lt;th&gt;Phone Number&lt;/th&gt;
@@ -494,7 +687,52 @@
                 &lt;td&gt;samantha.fields@sdccd.edu&lt;/td&gt;
             &lt;/tr&gt;
         &lt;/tbody&gt;
-    &lt;/table&gt;  
+    &lt;/table&gt;
+
+    &lt;----- Responsive Table -----&gt;
+    &lt;div class="table-container"&gt;
+        &lt;table class="table table-responsive table-striped"&gt;
+            &lt;thead&gt;
+                &lt;tr &gt;
+                    &lt;th&gt;Name&lt;/th&gt;
+                    &lt;th&gt;Staff Position&lt;/th&gt;
+                    &lt;th&gt;Phone Number&lt;/th&gt;
+                    &lt;th&gt;Email Address&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Abigail Norman&lt;/td&gt;
+                    &lt;td&gt;Principal&lt;/td&gt;
+                    &lt;td&gt;619-555-5550&lt;/td&gt;
+                    &lt;td&gt;abigail.norman@sdccd.edu&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Ed Perez&lt;/td&gt;
+                    &lt;td&gt;Vice Principal&lt;/td&gt;
+                    &lt;td&gt;619-555-5551&lt;/td&gt;
+                    &lt;td&gt;ed.perez@sdccd.edu&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Sophia Wright&lt;/td&gt;
+                    &lt;td&gt;Office Administrator&lt;/td&gt;
+                    &lt;td&gt;619-555-5552&lt;/td&gt;
+                    &lt;td&gt;sophia.wright@sdccd.edu&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Samantha Fields&lt;/td&gt;
+                    &lt;td&gt;Teacher&lt;/td&gt;
+                    &lt;td&gt;619-555-5553&lt;/td&gt;
+                    &lt;td&gt;samantha.fields@sdccd.edu&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+
+
+
+
+
 &lt;/body&gt;
                         </code>
                     </pre>
@@ -502,7 +740,7 @@
                     
                 </section>
 <!-- Forms -->
-                <section id="styling-forms">
+                <section class="styling" id="styling-forms">
                     <h3>Forms</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>  
                     <br>
@@ -517,7 +755,7 @@
                     </pre>
                 </section>
 <!-- Buttons -->
-                <section id="styling-btn">
+                <section class="styling" id="styling-btn">
                     <h3>Buttons</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>    
                     <br>
@@ -532,9 +770,9 @@
                     </pre>                  
                 </section>
 <!-- Images  -->
-                <section id="styling-img">
+                <section class="styling" id="styling-img">
                     <h3>Responsive Images</h3>
-                    <p>Responsive images will automatically adjust to fit the size of the screen. Add the class responsive-img to your img element and resize the browser window to see the responsive effect:</p>    
+                    <p>Responsive images will automatically adjust to fit the size of the screen. Add the class <span class="color-pink">.responsive-img</span> to your img element and resize the browser window to see the responsive effect:</p>    
                     <br>
                     
                     <section class="sample">
@@ -560,11 +798,28 @@
                     
                 </section>
 <!-- Helper -->
-                <section id="styling-helper">
+                <section class="styling" id="styling-helper">
                     <h3>Helper</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>    
-                    <br>
+                    <p> <span class="text-bolded">Float: </span>
+                    To float an element based on the current viewport size using the CSS float property. to the left apply the class <span class="color-pink">.float-left</span> and to float an element to the right apply the class <span class="color-pink">.float-right</span>.</p>
+
+                    
+                    <p><span class="text-bolded">Clear Float: </span> To clear the float after using the above stated class. Apply the class <span class="color-pink">.clearfix </span> to the element.</p>
+                    
+                    <p><span class="text-bolded">Full-Width: </span> To make element full width, apply the <span class="color-pink">.full-width</span> to the element's tag.</p>
                     <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
+
+                    <section class="sample">
+                        <section class="helper-sample">
+                            <section class="helper-inner-sample">
+                                <h2>Helper Classes</h2>
+                                <h3>Floats</h3>
+                               
+
+
+                            </section>
+                        </section>
+                    </section>
 
                     <pre>
                         <code class="language-html">
@@ -574,10 +829,53 @@
                         </code>
                     </pre>          
                 </section>
+<!-- Color  -->
+                <section class="sample">
+                    <section class="color-sample">
+                        <section class="color-inner-sample">
+                            <h2>Background/ Text Colors</h2>
+
+                            <h3>Background Colors</h3>
+                            <section class="bg-colors grid-container">
+                                <div class="bg-pink .col-4"><p class="color-white">.bg-pink</p> </div>
+                                <div class="bg-dark"><p class="color-accent">.bg-dark</p>  </div>
+                                <div class="bg-grey"><p class="color-white">.bg-grey</p></div>
+                                <div class="bg-blue"><p class="color-white">.bg-blue</p></div>  
+                                <div class="bg-purple"><p class="color-white">.bg-purple</p> </div>
+                                <div class="bg-red"><p class="color-white">.bg-red</p> </div>
+                                <div class="bg-white"><p>.bg-white</p></div>  
+                                <div class="bg-yellow"><p>.bg-yellow</p></div>
+                                <div class="bg-teal"><p>.bg-teal</p></div>  
+                                <div class="bg-green"><p>.bg-green</p> </div>
+                                <div class="bg-accent"><p>.bg-accent</p></div>
+
+                            </section>
+
+                            <h3>Text Colors</h3>
+                            <section class="colors">
+                                <p class="color-pink">.color-pink</p>
+                                <p class="color-dark">.color-dark</p>
+                                <p class="color-grey">.color-grey</p>
+                                <p class="color-blue">.color-blue</p>
+                                <p class="color-purple">.color-purple</p>
+                                <p class="color-red">.color-red</p>
+                                <p class="color-yellow">.color-yellow</p>
+                                <p class="color-teal">.color-teal</p>
+                                <p class="color-green">.color-green</p>
+                                <p class="color-accent">.color-accent</p>                                   
+                            </section>
+
+                        </section>
+                    </section>
+                </section>
+                    
+
+
+
 <!-- No Print  -->
-                <section id="styling-noprint">
+                <section class="styling" id="styling-noprint">
                     <h3>No-print</h3>
-                    <p>The noPrint class is used to hide an element when printing web pages. Insert the noPrint class into the element that needs to hidden at printing.</p>    
+                    <p>The <span class="color-pink">.noPrint</span> class is used to hide an element when printing web pages. Insert the <span class="color-pink">.noPrint</span> class into the element that needs to hidden at printing.</p>    
                     <br>
                     <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
 
@@ -590,7 +888,7 @@
                     </pre>            
                 </section>
 <!-- Icons  -->
-                <section id="styling-icons">
+                <section class="styling" id="styling-icons">
                     <h3>Icons</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>    
                     <br>
