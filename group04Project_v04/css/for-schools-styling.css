@@ -22,7 +22,6 @@
 
   /* font-families */
   --ff-poppins: 'Poppins', sans-serif;
-  --ff-open-sans: 'Open Sans', sans-serif;
   --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
     
   /* font-size upgrade*/
@@ -125,7 +124,6 @@ input, button, textarea, select              {font: inherit;}
 h1, h2, h3, h4, h5, h6 {margin: 0;}
 
 .ff-poppins           {font-family: var(--ff-poppins);}
-.ff-open-sans         {font-family: var(--ff-open-sans);}
 .ff-source-sans-pro   {font-family: var(--ff-source-sans-pro);}
 
 .letter-spacing-1     {letter-spacing: 4.75px;}
@@ -133,6 +131,9 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
 .letter-spacing-3     {letter-spacing: 2.35px;}
 
 /*----- Text Helper Classes ----- */
+.text-right           {text-align: right;}
+.text-center          {text-align: center;}
+.text-left            {text-align: left;}
 .text-uppercase       { text-transform: uppercase;}
 .text-lowercase       { text-transform: lowercase;}
 .text-capitalize      { text-transform: capitalize;}
@@ -145,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
 
 /*----- Font Weight ----- */
 .font-thin            {font-weight: var(--fw-100);}
-.font-extralight      {font-weight: var(--fw-200);}
+.font-lighter         {font-weight: var(--fw-200);}
 .font-light           {font-weight: var(--fw-300);}
 .font-normal          {font-weight: var(--fw-400);}
 .font-medium          {font-weight: var(--fw-500);}
@@ -171,7 +172,7 @@ ul ul, ul ol, ol ol, ol ul {margin: 1.5rem 0 1.5rem 3rem;font-size: 85%; }
 li                    {margin-bottom: 1rem; }
 
 /*----- Tables ----- */
-th, td                                  {padding: 12px 15px; text-align: left;border-bottom: 1px solid #E1E1E1; }
+th, td                                  {padding: 8px 10px; text-align: left;border-bottom: 1px solid #E1E1E1; }
 th:first-child, td:first-child          {padding-left: 0;}
 th:last-child, td:last-child            {padding-right: 0;}
 
@@ -214,19 +215,26 @@ th:last-child, td:last-child            {padding-right: 0;}
 
 /*---------- Fonts upgrade. Styling page: Typography section ----------*/
 
+.ff-source-sans-pro h1,
+.ff-source-sans-pro h2,
+.ff-source-sans-pro h3,
+.ff-source-sans-pro h4,
+.ff-source-sans-pro h5,
+.ff-source-sans-pro h6      {font-family: var(--ff-source-sans-pro);color: hsl(var(--clr-dark));}
+
 .ff-poppins h1,
 .ff-poppins h2,
 .ff-poppins h3,
 .ff-poppins h4,
 .ff-poppins h5,
-.ff-poppins h6      {font-family: var(--ff-poppins);color: hsl(var(--clr-dark));}
+.ff-poppins h6              {font-family: var(--ff-poppins);color: hsl(var(--clr-dark));}
 
-.ff-poppins h1      {font-size: var(--fs-01);}
-.ff-poppins h2      {font-size: var(--fs-02);text-shadow: none;}
-.ff-poppins h3      {font-size: var(--fs-03);text-decoration: none; margin-top: 0;  border-bottom: none;}
-.ff-poppins h4      {font-size: var(--fs-04);}
-.ff-poppins h5      {font-size: var(--fs-05);}
-.ff-poppins h6      {font-size: var(--fs-06);}
+.ff-poppins h1, .ff-source-sans-pro h1      {font-size: var(--fs-01);}
+.ff-poppins h2, .ff-source-sans-pro h2      {font-size: var(--fs-02);text-shadow: none;}
+.ff-poppins h3, .ff-source-sans-pro h3      {font-size: var(--fs-03);text-decoration: none; margin-top: 0;  border-bottom: none;}
+.ff-poppins h4, .ff-source-sans-pro h4      {font-size: var(--fs-04);}
+.ff-poppins h5, .ff-source-sans-pro h5      {font-size: var(--fs-05);}
+.ff-poppins h6  .ff-source-sans-pro h6      {font-size: var(--fs-06);}
 
 
 
@@ -237,13 +245,13 @@ th:last-child, td:last-child            {padding-right: 0;}
 /*----- Extra-Small devices (portrait phones, less than 576px) ----- */
  
 /*----- Small devices (landscape phones, 576px and up) ----- */
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) {  }
 
 /*----- Medium devices (tablets, 768px and up) ----- */ 
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {  }
 
 /*----- Large devices (desktops, 992px and up) ----- */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {  }
 
 /*----- X-Large devices (large desktops, 1200px and up) ----- */ 
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) {  }

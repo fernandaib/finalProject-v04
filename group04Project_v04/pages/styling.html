@@ -265,44 +265,84 @@
                     <h3>Typography</h3>
                     <p>Type is all set with the rems, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code>  font-size property.</p>  
                     <br>
-                    <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Poppins">Poppins</a> served by Google.</p>
+                    <p><span class="text-bolded">Fonts/ Headings:</span>    The typography font base by default is <a href="http://www.google.com/fonts/specimen/Poppins">Poppins</a> served by Google. The font may be changed to <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro">Source Sans Pro</a> by applying the class ff-source-sans-pro to the <code>&lt;html&gt;</code> element(s). If you wish to change the default font to Source Sans Pro apply the class ff-source-sans-pro to the <code>&lt;body&gt;</code> tag. </p>
                     <br>
-                     
+                    <p><span class="text-bolded">Font Weights and Stylings:</span> Change the font-weight or font-style of text with the utilities listed below. Font-style utilities are prefixed as .text-* and font-weight utilities are prefixed as .font-*.</p>
+                    <br> 
+                    <p> <span class="text-bolded">Text-Alignment:</span>  Easily realign text to components with text alignment classes. For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system. Text-Alignment utilities are prefixed as .text-* </p>
+                    <br>
+                    <p><span class="text-bolded">Text-Transform:</span> Transform text in components with text capitalization classes. Text-Transform utilities are also prefixed as .text-* </p>
+                    <br> 
+                    <p><span class="text-bolded">Letter Spacing:</span> Change the letter spacing with .letter-spacing-* utilities.</p>
+                    <br>
+
                     <section class="sample">
                         <section class="typography-sample">
                             <section class="typography-inner-sample">
                                 <h2>Typography</h2>
+                               
+                                <h3 class="text-underlined"> Headings</h3>
+                                <section class="ff-source-sans-pro">
+                                    
+                                    <h1 class="ff-source-sans-pro">Source Sans Pro Heading 1</h1>
+                                    <h2 class="ff-source-sans-pro">Source Sans Pro Heading 2</h2>
+                                    <h3 class="ff-source-sans-pro">Source Sans Pro Heading 3</h3>
+                                    <h4 class="ff-source-sans-pro">Source Sans Pro Heading 4</h4>
+                                    <h5 class="ff-source-sans-pro">Source Sans Pro Heading 5</h5>
+                                    <h6 class="ff-source-sans-pro">Source Sans Pro Heading 6</h6>
+                                </section>
+                                
+                                
                                 <section class="ff-poppins">
-                                    <h4 class="text-underlined">Headings</h4>
-                                    <h1 class="ff-poppins">Heading 1</h1>
-                                    <h2 class="ff-poppins">Heading 2</h2>
-                                    <h3 class="ff-poppins">Heading 3</h3>
-                                    <h4 class="ff-poppins">Heading 4</h4>
-                                    <h5 class="ff-poppins">Heading 5</h5>
-                                    <h6 class="ff-poppins">Heading 6</h6>
-                                    <br>
+                                    <h1 class="ff-poppins">Poppins Heading 1</h1>
+                                    <h2 class="ff-poppins">Poppins Heading 2</h2>
+                                    <h3 class="ff-poppins">Poppins Heading 3</h3>
+                                    <h4 class="ff-poppins">Poppins Heading 4</h4>
+                                    <h5 class="ff-poppins">Poppins Heading 5</h5>
+                                    <h6 class="ff-poppins">Poppins Heading 6</h6>
+                                </section>
+                                    
 
-                                    <h4 class="text-underlined">Font Weights and Stylings</h4>
+                                <h3 class="text-underlined">Font Stylings and Weights</h3>
+                                <section class="ff-poppins">
+                                    <p class="text-bolded">Bolded text.</p>
+                                    <p class="text-emphasized">Italic text.</p>
+                                    <p class="text-underlined">Underlined text.</p>
+                                    <br>
                                     <h5 class="font-thin">Font Thin</h5>
-                                    <h5 class="font-extralight">Font Extra Light</h5>
+                                    <h5 class="font-lighter">Font Extra Light</h5>
                                     <h5 class="font-light">Font Light</h5>
                                     <h5 class="font-normal">Font Normal</h5>
                                     <h5 class="font-medium">Font Medium</h5>
                                     <h5 class="font-semibold">Font Semibold</h5>
                                     <h5 class="font-bold">Font Bold</h5>
                                     <h5 class="font-extrabold">Font Extrabold</h5>
-                                    <br>
-                                    <p class="text-bolded">Bolded text.</p>
-                                    <p class="text-emphasized">Italic text.</p>
-                                    <p class="text-underlined">Underlined text.</p>
-                                    <br>
-
-                                    <h4 class="text-underlined">Text Transform</h4>
-                                    <p class="text-lowercase">Lowercased text.</p>
-                                    <p class="text-uppercase">Uppercased text.</p>
-                                    <p class="text-capitalize">capitalized text.</p>
-
                                 </section>
+
+                                <h3 class="text-underlined">Text alignment</h3>
+                                <section>
+                                    <p class="text-left">Start aligned text on all viewport sizes or to the left side.</p>
+                                    <p class="text-center">Center aligned text on all viewport sizes.</p>
+                                    <p class="text-right">End aligned text on all viewport sizes or to the right side.</p>
+                                </section>    
+
+                                <h3 class="text-underlined">Text Transform</h3>
+                                <section>
+                                    <p class="text-lowercase">Lowercase Text.</p>
+                                    <p class="text-uppercase">uppercase text.</p>
+                                    <p class="text-capitalize">capitalized text.</p>
+                                </section>
+
+                                <h3 class="text-underlined">Letter Spacing</h3>
+                                <section>
+                                    <p class="letter-spacing-1">Letter Spacing 1</p>
+                                    <p class="letter-spacing-2">Letter Spacing 2</p>
+                                    <p class="letter-spacing-3">Letter Spacing 3</p>
+                                    <p>Normal Letter Spacing</p>
+                                </section>
+                                    
+                                    
+                                
             
                             </section>
                         </section>
@@ -312,15 +352,28 @@
                         <code class="language-html">
 &lt;body&gt;
     &lt;section&gt;
-        &lt;h1 class="ff-poppins"&gt;Heading 1&lt;/h1&gt;
-        &lt;h2 class="ff-poppins"&gt;Heading 2&lt;/h2&gt;
-        &lt;h3 class="ff-poppins"&gt;Heading 3&lt;/h3&gt;
-        &lt;h4 class="ff-poppins"&gt;Heading 4&lt;/h4&gt;
-        &lt;h5 class="ff-poppins"&gt;Heading 5&lt;/h5&gt;
-        &lt;h6 class="ff-poppins"&gt;Heading 6&lt;/h6&gt;
+        &lt;h1 class="ff-source-sans-pro"&gt;Source Sans Pro Heading 1&lt;/h1&gt;
+        &lt;h2 class="ff-source-sans-pro"&gt;Source Sans Pro Heading 2&lt;/h2&gt;
+        &lt;h3 class="ff-source-sans-pro"&gt;Source Sans Pro Heading 3&lt;/h3&gt;
+        &lt;h4 class="ff-source-sans-pro"&gt;Source Sans Pro Heading 4&lt;/h4&gt;
+        &lt;h5 class="ff-source-sans-pro"&gt;Source Sans Pro Heading 5&lt;/h5&gt;
+        &lt;h6 class="ff-source-sans-pro"&gt;Source Sans Pro Heading 6&lt;/h6&gt;
+    &lt;/section&gt;  
+
+    &lt;section&gt;
+        &lt;h1 class="ff-poppins"&gt;Poppins Heading 1&lt;/h1&gt;
+        &lt;h2 class="ff-poppins"&gt;Poppins Heading 2&lt;/h2&gt;
+        &lt;h3 class="ff-poppins"&gt;Poppins Heading 3&lt;/h3&gt;
+        &lt;h4 class="ff-poppins"&gt;Poppins Heading 4&lt;/h4&gt;
+        &lt;h5 class="ff-poppins"&gt;Poppins Heading 5&lt;/h5&gt;
+        &lt;h6 class="ff-poppins"&gt;Poppins Heading 6&lt;/h6&gt;
     &lt;/section&gt;  
 
     &lt;section&gt; 
+        &lt;p class="text-bolded"&gt;Bolded text.&lt;/p&gt; 
+        &lt;p class="text-emphasized"&gt;Italic text.&lt;/p&gt;
+        &lt;p class="text-underline"&gt;Underlined text.&lt;/p&gt;                          
+
         &lt;h5 class="font-thin"&gt;Font Thin&lt;/h5&gt;                    
         &lt;h5 class="font-extralight"&gt;Font Extra Light&lt;/h5&gt;
         &lt;h5 class="font-normal"&gt;Font Normal &lt;/h5&gt;
@@ -331,16 +384,24 @@
     &lt;/section&gt;     
 
     &lt;section&gt;
-        &lt;p class="text-bolded"&gt;Bolded text.&lt;/p&gt; 
-        &lt;p class="text-emphasized"&gt;Italic text.&lt;/p&gt;
-        &lt;p class="text-underline"&gt;Underlined text.&lt;/p&gt;                    
-    &lt;section&gt; 
+        &lt;p class="text-left"&gt;Start aligned text on all viewport sizes or to the left side.&lt;/p&gt; 
+        &lt;p class="text-center"&gt;Center aligned text on all viewport sizes.&lt;/p&gt;
+        &lt;p class="text-right"&gt;End aligned text on all viewport sizes or to the right side.&lt;/p&gt;              
+    &lt;/section&gt; 
 
     &lt;section&gt; 
-        &lt;p class="text-lowercase"&gt;Lowercased text.&lt;/p&gt; 
-        &lt;p class="text-uppercase"&gt;Uppercased text.&lt;/p&gt;
+        &lt;p class="text-lowercase"&gt;Lowercase Text.&lt;/p&gt; 
+        &lt;p class="text-uppercase"&gt;uppercase text.&lt;/p&gt;
         &lt;p class="text-capitalize"&gt;capitalized text.&lt;/p&gt;
-    &lt;section&gt; 
+    &lt;/section&gt; 
+
+    &lt;section&gt;
+        &lt;p class="letter-spacing-1"&gt;Letter Spacing 1&lt;/p&gt; 
+        &lt;p class="letter-spacing-2"&gt;Letter Spacing 2&lt;/p&gt;
+        &lt;p class="letter-spacing-3"&gt;Letter Spacing 3&lt;/p&gt;
+        &lt;p &gt;Normal Letter Spacing 3&lt;/p&gt;                      
+    &lt;/section&gt; 
+
 &lt;/body&gt;
                         </code>
                     </pre>
@@ -350,12 +411,90 @@
                     <h3>Table</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>  
                     <br>
-                    
+                    <section class="sample">
+                        <section class="table-sample">
+                            <section class="table-inner-sample">
+                                <h2>Table  </h2>
+                                <h3>Academy Contact Information</h3>
+                                <table>
+                                    <thead>
+                                      <tr>
+                                        <th>Name</th>
+                                        <th>Staff Position</th>
+                                        <th>Phone Number</th>
+                                        <th>Email Address</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Abigail Norman</td>
+                                        <td>Principal</td>
+                                        <td>619-555-5550</td>
+                                        <td>abigail.norman@sdccd.edu</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Ed Perez</td>
+                                        <td>Vice Principal</td>
+                                        <td>619-555-5551</td>
+                                        <td>ed.perez@sdccd.edu</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sophia Wright</td>
+                                        <td>Office Administrator</td>
+                                        <td>619-555-5552</td>
+                                        <td>sophia.wright@sdccd.edu</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Samantha Fields</td>
+                                        <td>Teacher</td>
+                                        <td>619-555-5553</td>
+                                        <td>samantha.fields@sdccd.edu</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </section>
+                    </section>
 
                     <pre>
                         <code class="language-html">
 &lt;body&gt;
-    &lt;p&gt;Code is here&lt;/p&gt;        
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Staff Position&lt;/th&gt;
+                &lt;th&gt;Phone Number&lt;/th&gt;
+                &lt;th&gt;Email Address&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Abigail Norman&lt;/td&gt;
+                &lt;td&gt;Principal&lt;/td&gt;
+                &lt;td&gt;619-555-5550&lt;/td&gt;
+                &lt;td&gt;abigail.norman@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Ed Perez&lt;/td&gt;
+                &lt;td&gt;Vice Principal&lt;/td&gt;
+                &lt;td&gt;619-555-5551&lt;/td&gt;
+                &lt;td&gt;ed.perez@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Sophia Wright&lt;/td&gt;
+                &lt;td&gt;Office Administrator&lt;/td&gt;
+                &lt;td&gt;619-555-5552&lt;/td&gt;
+                &lt;td&gt;sophia.wright@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Samantha Fields&lt;/td&gt;
+                &lt;td&gt;Teacher&lt;/td&gt;
+                &lt;td&gt;619-555-5553&lt;/td&gt;
+                &lt;td&gt;samantha.fields@sdccd.edu&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;  
 &lt;/body&gt;
                         </code>
                     </pre>
@@ -372,7 +511,7 @@
                     <pre>
                         <code class="language-html">
 &lt;body&gt;
-    &lt;p&gt;Code is here&lt;/p&gt;        
+&lt;p&gt;Code is here&lt;/p&gt;
 &lt;/body&gt;
                         </code>
                     </pre>
