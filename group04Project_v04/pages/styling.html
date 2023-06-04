@@ -88,7 +88,7 @@
             
             <article class="article-01">
                 <h2>Styling</h2>
-<!-- reset  -->
+<!-- Reset  -->
                 <section class="styling" id="styling-reset">
                     <h3>Reset</h3>
                     <p>Link <code class="code-template">for-schools-styling.css</code> file through <code class="code-template">&lt;link&gt;</code> tag in the <code class="code-template">&lt;head&gt;</code>.</p>   
@@ -118,142 +118,218 @@
                 </section>
 <!-- Grid -->
                 <section class="styling" id="styling-grid">
-                    <h3>Grid</h3>
-                    <p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. To utilize the 12-column grid apply the <span class="color-pink">grid-container </span>.class to your wrapper element. The syntax is simple and it makes coding responsive much easier. Give it a try and resize the browser.</p>    
-                    
-                    <p>To implement a container that is larger than the 960px width, apply the  <span class="color-pink">.container</span> class to your wrapper element. The .container will implement a container with a max-width of 1280px instead.   </p>
-                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
+                    <h3>Grid System</h3>
                     <section class="sample">
                         <section class="grid-sample">
                             <section class="grid-inner-sample">
-                                <h2>Grid Layout</h2>
-                                <div class="grid-container" id="example-grid">
-                                    <div class="row">
-                                        <div class="columns-12">Twelve</div>
+                                <h2>Flexbox Grid Layout</h2>
+                                <!-- flexbox grid sample display -->
+                                <div class="container">
+                                    <div class="columns">
+                                        <div class="column col-12">
+                                            <div class="bg-teal display-box"> 
+                                                <p class="color-white">col-12 (100%)</p>    
+                                            </div>
+                                          </div>
                                     </div>
-                        
-                                    <div class="row">
-                                        <div class="columns-1">One</div>
-                                        <div class="columns-11">Eleven </div>
+                                    <div class="columns">
+                                        <div class="column col-9">
+                                          <div class="bg-teal display-box">
+                                                <p class="color-white">col-9 (75%)</p>  
+                                          </div>
+                                        </div>
                                     </div>
-                                    
-                                    <div class="row">
-                                        <div class="columns-2">Two</div>
-                                        <div class="columns-10">Ten</div>
+                                    <div class="columns">
+                                        <div class="column col-8">
+                                          <div class="bg-teal display-box">
+                                                <p class="color-white">col-8 </p>  
+                                          </div>
+                                        </div>
                                     </div>
-                                    
-                                    <div class="row">
-                                        <div class="columns-3">Three</div>
-                                        <div class="columns-9">Nine</div>
+                                    <div class="columns">
+                                        <div class="column col-6">
+                                            <div class="bg-teal display-box">
+                                                <p class="color-white">col-6 (50%)</p>  
+                                            </div>
+                                        </div>
                                     </div>
-                                    
-                                    <div class="row">
-                                        <div class="columns-4">Four</div>
-                                        <div class="columns-8">Eight</div>
+                                    <div class="columns">
+                                        <div class="column col-4">
+                                          <div class="bg-teal display-box">
+                                                <p class="color-white">col-4 </p>  
+                                          </div>
+                                        </div>
                                     </div>
-                                    
-                                    <div class="row">
-                                        <div class="columns-5">Five</div>
-                                        <div class="columns-7">Seven</div>
+                                    <div class="columns">
+                                        <div class="column col-3">
+                                            <div class="bg-teal display-box">
+                                                <p class="color-white">col-3 (25%)</p>  
+                                            </div>
+                                        </div>
                                     </div>
-                                    
-                                    <div class="row">
-                                        <div class="columns-6">Six</div>
-                                        <div class="columns-6">Six</div>
+                                    <div class="columns">
+                                        <div class="column col-2">
+                                            <div class="bg-teal display-box">
+                                                <p class="color-white">col-2</p>  
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="columns-7">Seven</div>
-                                        <div class="columns-5">Five</div>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <div class="columns-8">Eight</div>
-                                        <div class="columns-4">Four</div>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <div class="columns-9">Nine</div>
-                                        <div class="columns-3">Three</div>
-                                    </div>
-                        
-                                    <div class="row">
-                                        <div class="columns-10">Ten</div>
-                                        <div class="columns-2">Two</div>
-                                    </div>
-                        
-                                    <div class="row">
-                                        <div class="columns-11">Eleven</div>
-                                        <div class="columns-1">One</div>
-                                    </div>
-                    
-                                </div>
+                                </div>  
                             </section>
                         </section>
                     </section>
-                        
+
+
+                    <p>The layout includes flexbox based responsive grid system with 12 columns.</p>
+                    <p>Add the <span class="utility-code color-pink">.columns</span>  class to a container with the <span class="utility-code color-pink">.container</span> class. And add any element you want with the <span class="utility-code color-pink">column</span>  class inside the container. These columns will take up the space equally. You can specify the width of each column by adding class <span class="utility-code color-pink">col-</span> followed by the number 1 through 12 to indicate a width.</p>
+
+
+                    <section class="sample">
+                        <section class="grid-example-1">
+                            <section class="grid-inner-example">
+                                <!-- flexbox grid example -->
+                                <h3>Example 1</h3>
+                                <div class="container">
+                                    <div class="columns">
+                                        <div class="column col-6 display-box">col-6</div>
+                                        <div class="column col-3 display-box">col-3</div>
+                                        <div class="column col-2 display-box">col-2</div>
+                                        <div class="column col-1 display-box">col-1</div>
+                                    </div>
+                                </div>  
+                            </section>
+                        </section>
+                    </section>
+
+                    
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;----- Example 1 -----&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="columns"&gt;
+            &lt;div class="column col-6"&gt;
+            &lt;div class="column col-3"&gt;
+            &lt;div class="column col-2"&gt;
+            &lt;div class="column col-1"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;            
+    &lt;/div&gt;            
+&lt;/body&gt;
+                        </code>
+                    </pre>
+                    
+                    
+                    <h3>Responsive Container </h3>
+                    <section class="sample">
+                        <section class="grid-sample-2">
+                            <section class="grid-inner-sample">
+                                <h2>Responsive Container</h2>
+                                <!-- Responsive Container sample display -->
+                                <div class="container">
+                                    <div class="columns">
+                                        <div class="column col-10 col-lg-8 col-md-6 col-sm-4">
+                                          <div class="display-box bg-teal">
+                                            <div class="color-white">col-10</div>
+                                            <div class="color-white">col-lg-8</div>
+                                            <div class="color-white">col-md-6</div>
+                                            <div class="color-white">col-sm-4</div>
+                                          </div>
+                                        </div>
+                                        <div class="column col-2 col-lg-4 col-md-6 col-sm-8">
+                                          <div class="display-box bg-teal">
+                                            <div class="color-white">col-2</div>
+                                            <div class="color-white">col-lg-4</div>
+                                            <div class="color-white">col-md-6</div>
+                                            <div class="color-white">col-sm-8</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </section>
+                        </section>
+                    </section>
+                    
+                    <p>There are col-xs-*, col-sm-*, col-md-*, col-lg-* and col-xl-* available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+                    <ul class="unordered-list display-list">
+                        <li> <span class="text-bolded">col-xs-*</span> apply to width smaller than 576px. X-Small devices (portrait phones, less than 576px)</li>
+                        <li> <span class="text-bolded">col-sm-*</span> apply to width smaller than or equal to 767px. Small devices (landscape phones, 576px up to 767px)</li>
+                        <li> <span class="text-bolded">col-md-*</span> apply to width smaller than or equal to 991px. Medium devices (tablets, 768px up to 991px)</li>
+                        <li> <span class="text-bolded">col-lg-*</span>  apply to width smaller than or equal to 1199px. Large devices (desktops, 992px up to 1199px)</li>
+                        <li> <span class="text-bolded">col-xl-*</span>  apply to width smaller than or equal to 1400px X-Large devices (large desktops, 1200px up to 1400).</li>
+                        <li><span class="text-bolded">col-*</span>  apply to all width, including the width wider than 1400px.</li>
+                    </ul>                    
+                    <section class="sample">
+                        <section class="grid-example-2">
+                            <section class="grid-inner-example-2">
+                                <h3>Example 2</h3>
+                                <!-- grid example 2 -->
+                                <div class="container">
+                                    <div class="columns">
+                                        <div class="column col-4 col-xs-6 display-box">col-4 col-xs-6</div>
+                                        <div class="column col-4 col-xs-3 display-box">col-4 col-xs-3</div>
+                                        <div class="column col-4 col-xs-3 display-box">col-4 col-xs-3</div>
+                                    </div>
+                                </div>  
+                            </section>
+                        </section>
+                    </section>
+
+                    
+
+
+                    <pre>
+                        <code class="language-html">
+&lt;body&gt;
+    &lt;----- Example 2 -----&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="columns"&gt;
+            &lt;div class="column col-4 col-xs-6"&gt;
+            &lt;div class="column col-4 col-xs-3"&gt;
+            &lt;div class="column col-4 col-xs-3"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;            
+    &lt;/div&gt;            
+&lt;/body&gt;                    
+                        </code>
+                    </pre> 
+                    
+                    
+
+                    <span class="utility-code color-pink"></span> 
+                    <section class="sample">
+                        <section class="flexbox-sample">
+                            <section class="flexbox-inner-sample">
+                                <h2>Flexbox grid</h2>
+                                <!-- flexbox grid example -->
+                                <h3>Example 3</h3>
+                                <div class="container">
+                                    <div class="columns">
+                                        
+                                    <div class="column col-6">col-6</div>
+                                    <div class="column col-3">col-3</div>
+                                    <div class="column col-2">col-2</div>
+                                    <div class="column col-1">col-1</div>
+                                    </div>
+                                </div>  
+                            </section>
+                        </section>
+                    </section>
+                    
+                   
+                      
+
+
+                  
+                    
+                  
+
+                   
                     <pre>
                         <code class="language-html">
 &lt;section class="grid-sample"&gt;
     &lt;section class="grid-inner-sample"&gt;
-        &lt;h2&gt;Grid Layout&lt;/h2&gt;
-        &lt;div class="grid-container" id="example-grid"&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="columns-12"&gt;Twelve&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-                &lt;div class="columns-1"&gt;One&lt;/div&gt;
-                &lt;div class="columns-11"&gt;Eleven &lt;/div&gt;
-            &lt;/div&gt;
-            
-            &lt;div class="row"&gt;
-                &lt;div class="columns-2"&gt;Two&lt;/div&gt;
-                &lt;div class="columns-10"&gt;Ten&lt;/div&gt;
-            &lt;/div&gt;
-            
-            &lt;div class="row"&gt;
-                &lt;div class="columns-3"&gt;Three&lt;/div&gt;
-                &lt;div class="columns-9"&gt;Nine&lt;/div&gt;
-            &lt;/div&gt;
-            
-            &lt;div class="row"&gt;
-                &lt;div class="columns-4"&gt;Four&lt;/div&gt;
-                &lt;div class="columns-8"&gt;Eight&lt;/div&gt;
-            &lt;/div&gt;
-            
-            &lt;div class="row"&gt;
-                &lt;div class="columns-5"&gt;Five&lt;/div&gt;
-                &lt;div class="columns-7"&gt;Seven&lt;/div&gt;
-            &lt;/div&gt;
-            
-            &lt;div class="row"&gt;
-                &lt;div class="columns-6"&gt;Six&lt;/div&gt;
-                &lt;div class="columns-6"&gt;Six&lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="columns-7"&gt;Seven&lt;/div&gt;
-                &lt;div class="columns-5"&gt;Five&lt;/div&gt;
-            &lt;/div&gt;
-            
-            &lt;div class="row"&gt;
-                &lt;div class="columns-8"&gt;Eight&lt;/div&gt;
-                &lt;div class="columns-4"&gt;Four&lt;/div&gt;
-            &lt;/div&gt;
-            
-            &lt;div class="row"&gt;
-                &lt;div class="columns-9"&gt;Nine&lt;/div&gt;
-                &lt;div class="columns-3"&gt;Three&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-                &lt;div class="columns-10"&gt;Ten&lt;/div&gt;
-                &lt;div class="columns-2"&gt;Two&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-                &lt;div class="columns-11"&gt;Eleven&lt;/div&gt;
-                &lt;div class="columns-1"&gt;One&lt;/div&gt;
-            &lt;/div&gt;
+        
 
         &lt;/div&gt;
     &lt;/section&gt;
@@ -281,7 +357,7 @@
                             <section class="typography-inner-sample">
                                 <h2>Typography</h2>
                                
-                                <h3 class="text-underlined"> Headings</h3>
+                                <h3> Headings</h3>
                                 <section class="ff-source-sans-pro">
                                     
                                     <h1 class="ff-source-sans-pro">Source Sans Pro Heading 1</h1>
@@ -303,7 +379,7 @@
                                 </section>
                                     
 
-                                <h3 class="text-underlined">Font Stylings and Weights</h3>
+                                <h3>Font Stylings and Weights</h3>
                                 <section class="ff-poppins">
                                     <p class="text-bolded">Bolded text.</p>
                                     <p class="text-emphasized">Italic text.</p>
@@ -326,14 +402,14 @@
                                     <p class="text-right">End aligned text on all viewport sizes or to the right side.</p>
                                 </section>    
 
-                                <h3 class="text-underlined">Text Transform</h3>
+                                <h3>Text Transform</h3>
                                 <section>
                                     <p class="text-lowercase">Lowercase Text.</p>
                                     <p class="text-uppercase">uppercase text.</p>
                                     <p class="text-capitalize">capitalized text.</p>
                                 </section>
 
-                                <h3 class="text-underlined">Letter Spacing</h3>
+                                <h3>Letter Spacing</h3>
                                 <section>
                                     <p class="letter-spacing-1">Letter Spacing 1</p>
                                     <p class="letter-spacing-2">Letter Spacing 2</p>
@@ -399,7 +475,7 @@
         &lt;p class="letter-spacing-1"&gt;Letter Spacing 1&lt;/p&gt; 
         &lt;p class="letter-spacing-2"&gt;Letter Spacing 2&lt;/p&gt;
         &lt;p class="letter-spacing-3"&gt;Letter Spacing 3&lt;/p&gt;
-        &lt;p &gt;Normal Letter Spacing 3&lt;/p&gt;                      
+        &lt;p&gt;Normal Letter Spacing 3&lt;/p&gt;                      
     &lt;/section&gt; 
 
 &lt;/body&gt;
@@ -728,11 +804,6 @@
             &lt;/tbody&gt;
         &lt;/table&gt;
     &lt;/div&gt;
-
-
-
-
-
 &lt;/body&gt;
                         </code>
                     </pre>
@@ -892,6 +963,16 @@
                     <h3>Icons</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>    
                     <br>
+                    
+                    <section class="sample">
+                        <section class="flexbox-sample-1">
+                            <section class="flexbox-inner-sample-1">
+                                <h2>Icons</h2>
+                                
+                                
+                            </section>
+                        </section>
+                    </section>
                     
 
                     <pre>
