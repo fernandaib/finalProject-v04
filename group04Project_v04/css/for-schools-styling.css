@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 /* --------------------------------- */
 /* Custom Properties                 */
 /* --------------------------------- */ 
@@ -95,21 +97,13 @@ input, button, textarea, select              {font: inherit;}
 
 [class^="show-"], [class*="show-"] {display: none !important;}
 
-.cols,
-.columns {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: -.4rem;
-  margin-right: -.4rem;
-}
+.row {display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;margin-left: -.4rem;margin-right: -.4rem;}
 
-.cols.col-gapless, .columns.col-gapless                       {margin-left: 0;margin-right: 0;}
-.cols.col-gapless > .column, .columns.col-gapless > .column   {padding-left: 0;padding-right: 0;}
-.cols.col-oneline,.columns.col-oneline                        {-ms-flex-wrap: nowrap;flex-wrap: nowrap;overflow-x: auto;}
+/* .row.col-gapless            {margin-left: 0;margin-right: 0;}
+.row.col-gapless > .column  {padding-left: 0;padding-right: 0;}
+.row.col-oneline            {-ms-flex-wrap: nowrap;flex-wrap: nowrap;overflow-x: auto;} */
 
-[class~="col-"],.column {-ms-flex: 1;flex: 1;max-width: 100%;padding-left: .4rem;padding-right: .4rem;}
+[class~="col-"], .column {-ms-flex: 1;flex: 1;max-width: 100%;padding-left: .4rem;padding-right: .4rem;}
 [class^="column"][class*=" col-"]    {-ms-flex: none;flex: none;}
 
 .col-12               {width: 100%;}
@@ -288,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
 .font-extrabold       {font-weight: var(--fw-800);}
 
 /* Styling HTML elements */
-.text-bolded          {font-weight: bold;}
+.text-bold            {font-weight: bold;}
 .text-emphasized      {font-style: italic;}
 .text-underlined      {text-decoration: underline;}
 .address              {letter-spacing: .5px;}
@@ -299,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
 
 /*----- Lists ----- */
 ul.unordered-list             {list-style: circle inside; }
-ol.ordered-list               {list-style: lower-alpha inside;}
+ol.ordered-list               {list-style: decimal inside;}
 ol, ul                        {padding-left: 0;margin-top: 0;}
 ul ul, ul ol, ol ol, ol ul    {margin: 1.5rem 0 1.5rem 3rem;font-size: 85%;}
 li                            {margin-bottom: .25rem; }
@@ -340,7 +334,6 @@ th:last-child, td:last-child                    {padding-right: 0;}
 /*----- Helper Classes ----- */
 .float-left           {float: left; }
 .float-right          {float: right; }
-
 .clearfix             {overflow: auto;}
 .clearfix:after       {content: "";clear:both;display: block;height:0;line-height:0;visibility:hidden;}
 .full-width           {width: 100%;box-sizing: border-box; }
@@ -420,14 +413,14 @@ th:last-child, td:last-child                    {padding-right: 0;}
 
 
 /* Custom Styling  */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 .styling p            {margin: 10px 6px 0 0;}
 .bg-colors div        {margin: 7.5px 0; padding: 4px 0; border-radius: 4px; color:#000;} 
 .bg-colors div p      {margin-left: 10px; font-weight: bold;}
 .bg-colors >.bg-white {border: .25px solid #000;}
 .colors p             {margin: 7.5px; font-weight: bold;} 
-.utility-code         {font-family: 'Ubuntu', sans-serif; }
+.utility-code         {font-family: 'Ubuntu', sans-serif; font-weight: bold; }
 .sample p             {margin: 5px 0}
 .display-box          {margin-top: 15px; padding: 4px; border-radius: 4px; place-items: center; border: 1px solid  hsl(186, 83%, 45%);}
 .display-box p        {overflow-x: auto}
-.display-list         {margin: 5px 0 5px 8px}
+.display-list         {margin: 5px 0 5px 8px;}

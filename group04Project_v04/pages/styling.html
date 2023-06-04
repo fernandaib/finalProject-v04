@@ -125,49 +125,49 @@
                                 <h2>Flexbox Grid Layout</h2>
                                 <!-- flexbox grid sample display -->
                                 <div class="container">
-                                    <div class="columns">
+                                    <div class="row">
                                         <div class="column col-12">
                                             <div class="bg-teal display-box"> 
                                                 <p class="color-white">col-12 (100%)</p>    
                                             </div>
                                           </div>
                                     </div>
-                                    <div class="columns">
+                                    <div class="row">
                                         <div class="column col-9">
                                           <div class="bg-teal display-box">
                                                 <p class="color-white">col-9 (75%)</p>  
                                           </div>
                                         </div>
                                     </div>
-                                    <div class="columns">
+                                    <div class="row">
                                         <div class="column col-8">
                                           <div class="bg-teal display-box">
                                                 <p class="color-white">col-8 </p>  
                                           </div>
                                         </div>
                                     </div>
-                                    <div class="columns">
+                                    <div class="row">
                                         <div class="column col-6">
                                             <div class="bg-teal display-box">
                                                 <p class="color-white">col-6 (50%)</p>  
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="columns">
+                                    <div class="row">
                                         <div class="column col-4">
                                           <div class="bg-teal display-box">
                                                 <p class="color-white">col-4 </p>  
                                           </div>
                                         </div>
                                     </div>
-                                    <div class="columns">
+                                    <div class="row">
                                         <div class="column col-3">
                                             <div class="bg-teal display-box">
                                                 <p class="color-white">col-3 (25%)</p>  
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="columns">
+                                    <div class="row">
                                         <div class="column col-2">
                                             <div class="bg-teal display-box">
                                                 <p class="color-white">col-2</p>  
@@ -181,7 +181,7 @@
 
 
                     <p>The layout includes flexbox based responsive grid system with 12 columns.</p>
-                    <p>Add the <span class="utility-code color-pink">.columns</span>  class to a container with the <span class="utility-code color-pink">.container</span> class. And add any element you want with the <span class="utility-code color-pink">column</span>  class inside the container. These columns will take up the space equally. You can specify the width of each column by adding class <span class="utility-code color-pink">col-</span> followed by the number 1 through 12 to indicate a width.</p>
+                    <p>Add the <span class="utility-code color-pink">.row</span>  class to a container with the <span class="utility-code color-pink">.container</span> class. And add any element you want with the <span class="utility-code color-pink">.column</span>  class inside the container. These columns will take up the space equally. You can specify the width of each column by adding class <span class="utility-code color-pink">col-</span> followed by the number 1 through 12 to indicate a width.</p>
 
 
                     <section class="sample">
@@ -190,12 +190,22 @@
                                 <!-- flexbox grid example -->
                                 <h3>Example 1</h3>
                                 <div class="container">
-                                    <div class="columns">
+                                    <div class="row">
                                         <div class="column col-6 display-box">col-6</div>
                                         <div class="column col-3 display-box">col-3</div>
                                         <div class="column col-2 display-box">col-2</div>
                                         <div class="column col-1 display-box">col-1</div>
                                     </div>
+                                    <div class="row">
+                                        <div class="column col-4 display-box">col-4</div>
+                                        <div class="column col-4 display-box">col-4</div>
+                                        <div class="column col-4 display-box">col-4</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-6 display-box">col-6</div>
+                                        <div class="column col-6 display-box">col-6</div>
+                                    </div>
+
                                 </div>  
                             </section>
                         </section>
@@ -205,15 +215,27 @@
                     <pre>
                         <code class="language-html">
 &lt;body&gt;
-    &lt;----- Example 1 -----&gt;
     &lt;div class="container"&gt;
-        &lt;div class="columns"&gt;
-            &lt;div class="column col-6"&gt;
-            &lt;div class="column col-3"&gt;
-            &lt;div class="column col-2"&gt;
-            &lt;div class="column col-1"&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;            
+        &lt;----- Example 1a -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-6"&gt;col-6&lt;/div&gt;
+            &lt;div class="column col-3"&gt;col-3&lt;/div&gt;
+            &lt;div class="column col-2"&gt;col-2&lt;/div&gt;
+            &lt;div class="column col-1"&gt;col-1&lt;/div&gt;
+        &lt;/div&gt;  
+        
+        &lt;----- Example 1b -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-4"&gt;col-6&lt;/div&gt;
+            &lt;div class="column col-4"&gt;col-4&lt;/div&gt;
+            &lt;div class="column col-4"&gt;col-4&lt;/div&gt;
+        &lt;/div&gt;  
+
+        &lt;----- Example 1c -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-6"&gt;col-6&lt;/div&gt;
+            &lt;div class="column col-6"&gt;col-6&lt;/div&gt;
+        &lt;/div&gt;  
     &lt;/div&gt;            
 &lt;/body&gt;
                         </code>
@@ -227,7 +249,7 @@
                                 <h2>Responsive Container</h2>
                                 <!-- Responsive Container sample display -->
                                 <div class="container">
-                                    <div class="columns">
+                                    <div class="row">
                                         <div class="column col-10 col-lg-8 col-md-6 col-sm-4">
                                           <div class="display-box bg-teal">
                                             <div class="color-white">col-10</div>
@@ -250,25 +272,30 @@
                         </section>
                     </section>
                     
-                    <p>There are col-xs-*, col-sm-*, col-md-*, col-lg-* and col-xl-* available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+                    <p>There are <span class="utility-code color-pink">col-xs-*, col-sm-*, col-md-*, col-lg-* and col-xl-*</span>  available for flexible grid across mobile, tablet and desktop viewport usage.</p>
                     <ul class="unordered-list display-list">
-                        <li> <span class="text-bolded">col-xs-*</span> apply to width smaller than 576px. X-Small devices (portrait phones, less than 576px)</li>
-                        <li> <span class="text-bolded">col-sm-*</span> apply to width smaller than or equal to 767px. Small devices (landscape phones, 576px up to 767px)</li>
-                        <li> <span class="text-bolded">col-md-*</span> apply to width smaller than or equal to 991px. Medium devices (tablets, 768px up to 991px)</li>
-                        <li> <span class="text-bolded">col-lg-*</span>  apply to width smaller than or equal to 1199px. Large devices (desktops, 992px up to 1199px)</li>
-                        <li> <span class="text-bolded">col-xl-*</span>  apply to width smaller than or equal to 1400px X-Large devices (large desktops, 1200px up to 1400).</li>
-                        <li><span class="text-bolded">col-*</span>  apply to all width, including the width wider than 1400px.</li>
+                        <li> <span class="text-bold">col-xs-*</span> apply to width smaller than 576px. X-Small devices (portrait phones, less than 576px)</li>
+                        <li> <span class="text-bold">col-sm-*</span> apply to width smaller than or equal to 767px. Small devices (landscape phones, 576px up to 767px)</li>
+                        <li> <span class="text-bold">col-md-*</span> apply to width smaller than or equal to 991px. Medium devices (tablets, 768px up to 991px)</li>
+                        <li> <span class="text-bold">col-lg-*</span>  apply to width smaller than or equal to 1199px. Large devices (desktops, 992px up to 1199px)</li>
+                        <li> <span class="text-bold">col-xl-*</span>  apply to width smaller than or equal to 1400px X-Large devices (large desktops, 1200px up to 1400).</li>
+                        <li><span class="text-bold">col-*</span>  apply to all width, including the width wider than 1400px.</li>
                     </ul>                    
                     <section class="sample">
                         <section class="grid-example-2">
                             <section class="grid-inner-example-2">
-                                <h3>Example 2</h3>
+                                <h3>Example 2 - Responsive Container</h3>
                                 <!-- grid example 2 -->
                                 <div class="container">
-                                    <div class="columns">
+                                    <div class="row">
                                         <div class="column col-4 col-xs-6 display-box">col-4 col-xs-6</div>
                                         <div class="column col-4 col-xs-3 display-box">col-4 col-xs-3</div>
                                         <div class="column col-4 col-xs-3 display-box">col-4 col-xs-3</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-4 col-xs-6 col-md-4 display-box">col-4 col-xs-6 col-md-4</div>
+                                        <div class="column col-4 col-xs-3 col-md-5 display-box">col-4 col-xs-3 col-md-5</div>
+                                        <div class="column col-4 col-xs-3 col-md-3 display-box">col-4 col-xs-3 col-md-3</div>
                                     </div>
                                 </div>  
                             </section>
@@ -281,13 +308,18 @@
                     <pre>
                         <code class="language-html">
 &lt;body&gt;
-    &lt;----- Example 2 -----&gt;
     &lt;div class="container"&gt;
-        &lt;div class="columns"&gt;
-            &lt;div class="column col-4 col-xs-6"&gt;
-            &lt;div class="column col-4 col-xs-3"&gt;
-            &lt;div class="column col-4 col-xs-3"&gt;
-            &lt;/div&gt;
+        &lt;----- Example 2a -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-4 col-xs-6"&gt;column col-4 col-xs-6&lt;/div&gt;
+            &lt;div class="column col-4 col-xs-3"&gt;column col-4 col-xs-3&lt;/div&gt;  
+            &lt;div class="column col-4 col-xs-3"&gt;column col-4 col-xs-3&lt;/div&gt;
+        &lt;/div&gt;                    
+        &lt;----- Example 2b -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-4 col-xs-6 col-md-4"&gt;column col-4 col-xs-6 col-lg-4&lt;/div&gt;
+            &lt;div class="column col-4 col-xs-3 col-md-5"&gt;column col-4 col-xs-3 col-md-5&lt;/div&gt;  
+            &lt;div class="column col-4 col-xs-3 col-md-3"&gt;column col-4 col-xs-3 col-md-3&lt;/div&gt;
         &lt;/div&gt;            
     &lt;/div&gt;            
 &lt;/body&gt;                    
@@ -295,21 +327,31 @@
                     </pre> 
                     
                     
+                    <h3>Column offset </h3>
+                    <p>The Flexbox grid provides margin auto utilities to set offset. There are <span class="utility-code color-pink">.col-ml-auto</span>, <span class="utility-code color-pink">.col-mr-auto</span> and <span class="utility-code color-pink">.col-mx-auto</span> to set margins between columns without using empty columns.</p>
+                    <ol class="ordered-list display-list">
+                        <li><span class="text-bold">.col-ml-auto</span> offsets the left of the column.</li>
+                        <li><span class="text-bold">.col-mr-auto</span> offsets the right of the column.</li>
+                        <li><span class="text-bold">.col-mx-auto</span> offsets the left and right of the column.</li>
+                    </ol>
 
                     <span class="utility-code color-pink"></span> 
                     <section class="sample">
-                        <section class="flexbox-sample">
-                            <section class="flexbox-inner-sample">
-                                <h2>Flexbox grid</h2>
-                                <!-- flexbox grid example -->
-                                <h3>Example 3</h3>
+                        <section class="grid-sample-3">
+                            <section class="grid-inner-sample-3">
+                                <!-- <h2>Column Offset</h2> -->
+                                <!-- Grid Offset example -->
+                                <h3>Example 3 - Column offset</h3>
                                 <div class="container">
-                                    <div class="columns">
-                                        
-                                    <div class="column col-6">col-6</div>
-                                    <div class="column col-3">col-3</div>
-                                    <div class="column col-2">col-2</div>
-                                    <div class="column col-1">col-1</div>
+                                    <div class="row">
+                                        <div class="column col-4 col-mr-auto display-box">col-4 col-mr-auto</div>
+                                        <div class="column col-2 display-box">col-2</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-6 col-mx-auto display-box">col-6 col-mx-auto</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-6 col-ml-auto display-box">col-6 col-ml-auto</div>
                                     </div>
                                 </div>  
                             </section>
@@ -327,13 +369,23 @@
                    
                     <pre>
                         <code class="language-html">
-&lt;section class="grid-sample"&gt;
-    &lt;section class="grid-inner-sample"&gt;
-        
-
-        &lt;/div&gt;
-    &lt;/section&gt;
-&lt;/section&gt;                        
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;----- Example 3a -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-4 col-mr-auto"&gt;col-4 col-mr-auto&lt;/div&gt;
+            &lt;div class="column col-2"&gt;col-2&lt;/div&gt;
+        &lt;/div&gt; 
+        &lt;----- Example 3b -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-6 col-mx-auto"&gt;col-6 col-mx-auto&lt;/div&gt;
+        &lt;/div&gt; 
+        &lt;----- Example 3c -----&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="column col-6 col-ml-auto"&gt;col-6 col-ml-auto&lt;/div&gt;
+        &lt;/div&gt; 
+    &lt;/div&gt;            
+&lt;/body&gt;                    
                         </code>
                     </pre>
                 </section>
@@ -342,15 +394,15 @@
                     <h3>Typography</h3>
                     <p>Type is all set with the rems, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code>  font-size property.</p>  
                   
-                    <p><span class="text-bolded">Fonts/ Headings:</span>    The typography font base by default is <a href="http://www.google.com/fonts/specimen/Poppins">Poppins</a> served by Google. The font may be changed to <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro">Source Sans Pro</a> by applying the class <span class="color-pink">.ff-source-sans-pro</span> to the <code>&lt;html&gt;</code> element(s). If you wish to change the default font to Source Sans Pro apply the class.ff-source-sans-pro to the <code>&lt;body&gt;</code> tag. If you would like to use both fonts interchangeably, apply the class <span class="color-pink">.ff-poppins</span> or <span class="color-pink">.ff-source-sans-pro</span> to the <code>&lt;html&gt;</code> element(s) you would like to style.</p>
+                    <p><span class="text-bold">Fonts/ Headings:</span>    The typography font base by default is <a href="http://www.google.com/fonts/specimen/Poppins">Poppins</a> served by Google. The font may be changed to <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro">Source Sans Pro</a> by applying the class <span class="utility-code color-pink">.ff-source-sans-pro</span> to the <code>&lt;html&gt;</code> element(s). If you wish to change the default font to Source Sans Pro apply the class .ff-source-sans-pro to the <code>&lt;body&gt;</code> tag. If you would like to use both fonts interchangeably, apply the class <span class="utility-code color-pink">.ff-poppins</span> or <span class="utility-code color-pink">.ff-source-sans-pro</span> to the <code>&lt;html&gt;</code> element(s) you would like to style.</p>
                     
-                    <p><span class="text-bolded">Font Weights and Stylings:</span> Change the font-weight or font-style of text with the utilities listed below. Font-style utilities are prefixed as <span class="color-pink"> .text-* </span>and font-weight utilities are prefixed as <span class="color-pink">.font-*</span>.</p>
+                    <p><span class="text-bold">Font Weights and Stylings:</span> Change the font-weight or font-style of text with the utilities listed below. Font-style utilities are prefixed as <span class="utility-code color-pink"> .text-* </span>and font-weight utilities are prefixed as <span class="utility-code color-pink">.font-*</span>.</p>
                     
-                    <p> <span class="text-bolded">Text-Alignment:</span>  Easily realign text to components with text alignment classes. For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system. Text-Alignment utilities are prefixed as <span class="color-pink">.text-*</span>.</p>
+                    <p> <span class="text-bold">Text-Alignment:</span>  Easily realign text to components with text alignment classes. For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system. Text-Alignment utilities are prefixed as <span class="utility-code color-pink">.text-*</span>.</p>
                     
-                    <p><span class="text-bolded">Text-Transform:</span> Transform text in components with text capitalization classes. Text-Transform utilities are also prefixed as <span class="color-pink">.text-* </span>.</p>
+                    <p><span class="text-bold">Text-Transform:</span> Transform text in components with text capitalization classes. Text-Transform utilities are also prefixed as <span class="utility-code color-pink">.text-* </span>.</p>
                     
-                    <p><span class="text-bolded">Letter Spacing:</span> Change the letter spacing with <span class="color-pink">.letter-spacing-*</span> utilities.</p>
+                    <p><span class="text-bold">Letter Spacing:</span> Change the letter spacing with <span class="utility-code color-pink">.letter-spacing-*</span> utilities.</p>
                     
                     <section class="sample">
                         <section class="typography-sample">
@@ -381,7 +433,7 @@
 
                                 <h3>Font Stylings and Weights</h3>
                                 <section class="ff-poppins">
-                                    <p class="text-bolded">Bolded text.</p>
+                                    <p class="text-bold">Bolded text.</p>
                                     <p class="text-emphasized">Italic text.</p>
                                     <p class="text-underlined">Underlined text.</p>
                                     <br>
@@ -485,13 +537,13 @@
 <!-- Table  -->
                 <section class="styling" id="styling-table">
                     <h3>Table</h3>
-                    <p><span class="text-bolded">Regular Tables:</span> Properly markup the <code>&lt;html&gt;</code> with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a table. Add the class <span class="color-pink">.table</span> to <code>&lt;table&gt;</code>.</p> 
+                    <p><span class="text-bold">Regular Tables:</span> Properly markup the <code>&lt;html&gt;</code> with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a table. Add the class <span class="utility-code color-pink">.table</span> to <code>&lt;table&gt;</code>.</p> 
                     
-                    <p><span class="text-bolded">Striped tables: </span>Use the <span class="color-pink">table-striped</span> class to <code>&lt;table&gt;</code> to add zebra striped style. For hoverable table rows, you can add the  <span class="color-pink">table-hover</span> class to enable hover style. </p>
+                    <p><span class="text-bold">Striped tables: </span>Use the <span class="utility-code color-pink">table-striped</span> class to <code>&lt;table&gt;</code> to add zebra striped style. For hoverable table rows, you can add the  <span class="utility-code color-pink">.table-hover</span> class to enable hover style. </p>
 
-                    <p><span class="text-bolded">Bordered tables: </span>Use the <span class="color-pink">table-bordered</span> class to <code>&lt;table&gt;</code> to add a bordered style. </p>
+                    <p><span class="text-bold">Bordered tables: </span>Use the <span class="utility-code color-pink">.table-bordered</span> class to <code>&lt;table&gt;</code> to add a bordered style. </p>
 
-                    <p><span class="text-bolded">Responsive Table: </span> A responsive table will display a horizontal scroll bar if the screen is too small to display the full content. Resize the browser window to see the effect.  To add this feature to your table, add a <code>&lt;div&gt;</code> wrapper to the table with the class <span class="color-pink">.table-container</span> around the table and then add the  <span class="color-pink">.table-responsive</span> class to <code>&lt;table&gt;</code> element. I recommend this method for all tables to add in responsiveness!</p>
+                    <p><span class="text-bold">Responsive Table: </span> A responsive table will display a horizontal scroll bar if the screen is too small to display the full content. Resize the browser window to see the effect.  To add this feature to your table, add a <code>&lt;div&gt;</code> wrapper to the table with the class <span class="utility-code color-pink">.table-container</span> around the table and then add the  <span class="utility-code color-pink">.table-responsive</span> class to <code>&lt;table&gt;</code> element. I recommend this method for all tables to add in responsiveness!</p>
 
 
                     <br>
@@ -843,7 +895,7 @@
 <!-- Images  -->
                 <section class="styling" id="styling-img">
                     <h3>Responsive Images</h3>
-                    <p>Responsive images will automatically adjust to fit the size of the screen. Add the class <span class="color-pink">.responsive-img</span> to your img element and resize the browser window to see the responsive effect:</p>    
+                    <p>Responsive images will automatically adjust to fit the size of the screen. Add the class <span class="utility-code color-pink">.responsive-img</span> to your img element and resize the browser window to see the responsive effect:</p>    
                     <br>
                     
                     <section class="sample">
@@ -871,13 +923,13 @@
 <!-- Helper -->
                 <section class="styling" id="styling-helper">
                     <h3>Helper</h3>
-                    <p> <span class="text-bolded">Float: </span>
-                    To float an element based on the current viewport size using the CSS float property. to the left apply the class <span class="color-pink">.float-left</span> and to float an element to the right apply the class <span class="color-pink">.float-right</span>.</p>
+                    <p> <span class="text-bold">Float: </span>
+                    To float an element based on the current viewport size using the CSS float property. to the left apply the class <span class="utility-code color-pink">.float-left</span> and to float an element to the right apply the class <span class="utility-code color-pink">.float-right</span>.</p>
 
                     
-                    <p><span class="text-bolded">Clear Float: </span> To clear the float after using the above stated class. Apply the class <span class="color-pink">.clearfix </span> to the element.</p>
+                    <p><span class="text-bold">Clear Float: </span> To clear the float after using the above stated class. Apply the class <span class="utility-code color-pink">.clearfix </span> to the element.</p>
                     
-                    <p><span class="text-bolded">Full-Width: </span> To make element full width, apply the <span class="color-pink">.full-width</span> to the element's tag.</p>
+                    <p><span class="text-bold">Full-Width: </span> To make element full width, apply the <span class="utility-code color-pink">.full-width</span> to the element's tag.</p>
                     <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
 
                     <section class="sample">
@@ -946,7 +998,7 @@
 <!-- No Print  -->
                 <section class="styling" id="styling-noprint">
                     <h3>No-print</h3>
-                    <p>The <span class="color-pink">.noPrint</span> class is used to hide an element when printing web pages. Insert the <span class="color-pink">.noPrint</span> class into the element that needs to hidden at printing.</p>    
+                    <p>The <span class="utility-code color-pink">.noPrint</span> class is used to hide an element when printing web pages. Insert the <span class="utility-code color-pink">.noPrint</span> class into the element that needs to hidden at printing.</p>    
                     <br>
                     <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
 
