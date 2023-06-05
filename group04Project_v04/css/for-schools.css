@@ -153,8 +153,8 @@
   opacity: 1;
 }
 
-/*------------------------------------------JUMBOTRON------------------------------------------*/
-.jumbotron-sample{
+/*------------------------------------------JUMBOTRON NO BG PHOTO------------------------------------------*/
+.jumbotron-for-schools{
   height: 100vh;
   display: flex;
   align-items: center;
@@ -163,29 +163,29 @@
   color: #7b7b7b;
 }
 
-.jumbotron-sample .jumbotron-inner-sample{
+.jumbotron-for-schools .jumbotron-inner-for-schools{
   width: 70%;
 }
 
-.jumbotron-sample .jumbotron-inner-sample h2{
+.jumbotron-for-schools .jumbotron-inner-for-schools h2{
   font-size: clamp(1rem, 7vw, 6rem);
   font-weight: 700;
   margin-bottom: 1em;
 }
 
-.jumbotron-sample .jumbotron-inner-sample p{
+.jumbotron-for-schools .jumbotron-inner-for-schools p{
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 1em;
 }
 
-.jumbotron-btn-sample{
+.jumbotron-btn-for-schools{
   display: flex;
   justify-content: center;
   gap: 2em;
 }
 
-.jumbotron-btn-sample .btn-one-sample{  
+.jumbotron-btn-for-schools .btn-one-for-schools{  
   background-color: #FFF;
   border: solid 2px #7b7b7b;
   border-radius: .5em;
@@ -194,7 +194,65 @@
   cursor: pointer;
 }
 
-.jumbotron-btn-sample .btn-two-sample{
+.jumbotron-btn-for-schools .btn-two-for-schools{
+  background-color: #e3e3e3;
+  border: solid 2px #FFF;
+  border-radius: .5em;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  padding: .5em 1em;  
+  cursor: pointer;
+}
+
+/*------------------------------------------JUMBOTRON WITH BG PHOTO------------------------------------------*/
+
+.jumbotron-bg-for-schools{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/bgJmtrn.svg); 
+  background-repeat: no-repeat;  
+  background-position: center;
+  color: #000;
+  
+  
+}
+
+.jumbotron-bg-for-schools .jumbotronbg-bg-inner-for-schools{
+  width: 70%;
+  
+}
+
+.jumbotron-bg-for-schools .jumbotron-bg-inner-for-schools h2{
+  font-size: clamp(1rem, 7vw, 6rem);
+  font-weight: 700;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 3px #7b7b7b;
+}
+
+.jumbotron-for-schools .jumbotron-inner-for-schools p{
+  font-size: clamp(.5rem, 1vw, 2.5rem);
+  font-weight: 500;
+  margin-bottom: 1em;
+  text-shadow: 2px 2px 3px #7b7b7b;
+}
+
+.jumbotron-btn-for-schools{
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.jumbotron-btn-for-schools .btn-one-for-schools{  
+  background-color: #FFF;
+  border: solid 2px #7b7b7b;
+  border-radius: .5em;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  padding: .25em 1em;  
+  cursor: pointer;
+}
+
+.jumbotron-btn-for-schools .btn-two-for-schools{
   background-color: #e3e3e3;
   border: solid 2px #FFF;
   border-radius: .5em;
