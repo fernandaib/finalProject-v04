@@ -2,7 +2,7 @@
 
 //Components: Slides
 
-const images = document.querySelectorAll('.slideshow-sample img');
+const images = document.querySelectorAll('.for-schools-slideshow img');
 let currentIndex = 0;
 
 function showImage(index) {

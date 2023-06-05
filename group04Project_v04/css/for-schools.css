@@ -130,10 +130,10 @@
 /* ------------------------------------------SLIDE------------------------------------------*/
 .sample-slide h1 {
   font-size: 2em;  
-  margin-bottom: .5em;;
+  margin-bottom: .5em;  
 }
 
-.slideshow-sample {
+.for-schools-slideshow {
   position: relative;
   width: 300px;
   height: auto;
@@ -141,7 +141,7 @@
   
 }
 
-/* .slideshow-sample img {
+.for-schools-slideshow img {
   position: absolute;
   top: 0;
   left: 0;
@@ -149,9 +149,9 @@
   transition: opacity 1s ease-in-out;
 }
 
-.slideshow-sample img.active {
+.for-schools-slideshow img.active {
   opacity: 1;
-} */
+}
 
 /*------------------------------------------JUMBOTRON------------------------------------------*/
 .jumbotron-sample{

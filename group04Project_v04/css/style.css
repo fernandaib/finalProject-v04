@@ -508,6 +508,7 @@ font-family: 'Source Code Pro', monospace;
   border: solid 2px var(--color-hover);
   border-radius: .5em;
   padding: .25em;  
+  margin-top: 1em;
   text-align: center;
   position: relative;
   height: 300px;
