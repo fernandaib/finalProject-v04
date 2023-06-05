@@ -141,7 +141,7 @@
   
 }
 
-.slideshow-sample img {
+/* .slideshow-sample img {
   position: absolute;
   top: 0;
   left: 0;
@@ -151,7 +151,7 @@
 
 .slideshow-sample img.active {
   opacity: 1;
-}
+} */
 
 /*------------------------------------------JUMBOTRON------------------------------------------*/
 .jumbotron-sample{
