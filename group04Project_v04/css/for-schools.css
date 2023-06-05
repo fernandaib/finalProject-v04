@@ -210,15 +210,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/bgJmtrn.svg); 
+  background-image: url(../images/Jumbotron100.jpg); 
   background-repeat: no-repeat;  
-  background-position: center;
-  color: #000;
-  
-  
+  background-position: center; 
 }
 
-.jumbotron-bg-for-schools .jumbotronbg-bg-inner-for-schools{
+.jumbotron-bg-for-schools .jumbotron-bg-inner-for-schools{
   width: 70%;
   
 }
@@ -226,18 +223,19 @@
 .jumbotron-bg-for-schools .jumbotron-bg-inner-for-schools h2{
   font-size: clamp(1rem, 7vw, 6rem);
   font-weight: 700;
-  margin-bottom: 1em;
+  margin-bottom: 1em;  
   text-shadow: 1px 1px 3px #7b7b7b;
 }
 
-.jumbotron-for-schools .jumbotron-inner-for-schools p{
+.jumbotron-bg-for-schools .jumbotron-bg-inner-for-schools p{
   font-size: clamp(.5rem, 1vw, 2.5rem);
   font-weight: 500;
   margin-bottom: 1em;
-  text-shadow: 2px 2px 3px #7b7b7b;
+  color: #232323;
+  text-shadow: 2px 2px 3px #c0c0c0;
 }
 
-.jumbotron-btn-for-schools{
+/* .jumbotron-btn-for-schools{
   display: flex;
   justify-content: center;
   gap: 2em;
@@ -259,7 +257,7 @@
   font-size: clamp(1rem, 2vw, 1.5rem);
   padding: .5em 1em;  
   cursor: pointer;
-}
+} */
 
 
  /*============================TABLET SIZE============================*/
