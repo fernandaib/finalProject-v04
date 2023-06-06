@@ -386,8 +386,7 @@ input[type="radio"]:checked ~ span:before {
 .jumbotron-bg-for-schools .jumbotron-bg-inner-for-schools p{
   font-size: clamp(.5rem, 1vw, 2.5rem);
   font-weight: 500;
-  margin-bottom: 1em;
-  color: #232323;
+  margin-bottom: 1em;  
   text-shadow: 2px 2px 3px #c0c0c0;
 }
 
