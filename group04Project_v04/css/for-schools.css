@@ -2,6 +2,10 @@
    v1.0 | 202306007
    License: none (public domain)
 */
+/* ------------------------------------------BUTTONS------------------------------------------*/
+
+
+
 
 /* ------------------------------------------NAV BAR------------------------------------------*/
 .header-for-schools {
@@ -217,15 +221,22 @@
 
 /* ------------------------------------------SLIDE------------------------------------------*/
 
-.for-schools-title-slideshow {
-  font-size: 2em;
+body {
   
-  margin-bottom: .5em;;
+  padding: 3em;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.for-schools-title-slideshow {
+  font-size: 2em;  
+  margin-bottom: .5em;
 }
 
 .for-schools-slideshow {
   position: relative;
-  width: 300px;
+  width: 100%;
   margin: auto;
 }
 
@@ -240,10 +251,6 @@
 .for-schools-slideshow img.active {
   opacity: 1;
 }
-
-
-
-
 
  /*================================================ TABLET SIZE ================================================*/
 

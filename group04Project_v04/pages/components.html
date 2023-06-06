@@ -279,24 +279,26 @@
                     <p>A slideshow is used to cycle through elements. After following instructions described in <span class="text-bold">Start</span> section, take into account that <span class="utility-code color-pink">.for-schools-slideshow</span> class must be added into wrap images section.</p> 
                     
                     <section class="sample-slide">
-                        <h1 class="for-schools-title-slideshow">Title</h1>
-                            <section class="for-schools-slideshow">
-                                <img src="../images/sample01.jpg" alt="img 01">
-                                <img src="../images/sample02.jpg" alt="img 02">
-                                <img src="../images/sample03.jpg" alt="img 03">
-                                
-                            </section>
+                        <h1>Title</h1>
+                        <section class="slideshow">
+                            <img src="../images/sample01.jpg" alt="img 01">
+                            <img src="../images/sample02.jpg" alt="img 02">
+                            <img src="../images/sample03.jpg" alt="img 03">                            
+                        </section>         
+                        
                             
                     </section>
                     
                     <pre>
                         <code class="language-html">
-&lt;h1 class="for-schools-title-slideshow"&gt;Title&lt;/h1&gt;
+&lt;body&gt;
+    &lt;h1 class="for-schools-title-slideshow"&gt;Title&lt;/h1&gt;
     &lt;section class="for-schools-slideshow"&gt;
         &lt;img src="../images/sample01.jpg" alt="img 01"&gt;
         &lt;img src="../images/sample02.jpg" alt="img 02"&gt;
         &lt;img src="../images/sample03.jpg" alt="img 03"&gt;                                                       
     &lt;/section&gt;
+&lt;/body&gt;
                         </code>
                     </pre>                   
                 </section>
@@ -360,21 +362,13 @@
             </section>            
         </footer>   
 
-        <!-- Script file -->
+        
+        <!-- Script file of 4-Schools website-->
+        <script src="../scripts/script.js"></script> 
+
         <!-- For Schools framework -->
         <script src="../scripts/for-schools.js"></script>
-        <script src="../scripts/prism.js"></script> 
-        
-        <!-- For Schools framework -->
-        <!-- Script file -->
-        <script src="scripts/jquery-3.6.3.min.js"></script>
-        
-
-        <!-- Script file -->
-        <script src="../scripts/script.js"></script> 
-       
-        
+        <script src="../scripts/prism.js"></script>         
     </body>
-
 
 </html>
