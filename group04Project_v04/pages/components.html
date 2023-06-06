@@ -237,7 +237,7 @@
                     <h3>CSS Component: <em class="highlight">Modal Pop-up</em></h3>
                     <p>Modal popups are used pretty frequently on the web. Some popular uses of them include driving newsletter sign ups, displaying notifications/alerts, and handling register and login forms. </p> 
                     <br>
-                    <p>Our modal will be generic which means you will be free to use it for whatever purpose you'd like. The modal pop-up will be embedded in a typed link for users to click.  </p>
+                    <p>Our modal will be generic which means you will be free to use it for whatever purpose you'd like. The modal pop-up will be embedded in a typed link for users to click or a button.  </p>
                         
                     <section class="sample">
                         <section class="modal-sample">
@@ -255,10 +255,8 @@
                                        
                                     </div>
                                 </div>
-
-                                
                             
-                                <!-- Hidden modal text -->
+                                <!-- Hidden modal text link -->
                                 <div id="open-modal" class="modal-content">
                                     <div class="container">
                                         <a href="#modal-close" title="close" class="modal-close" data-bs-dismiss="modal" aria-label="close">X</a> 
@@ -270,7 +268,7 @@
 
                                 </div>
 
-                                <!-- Hidden modal text -->
+                                <!-- Hidden modal button text -->
                                 <div id="open-modal-btn" class="modal-content">
                                     <div class="container">
                                         <a href="#modal-close" title="close" class="modal-close" data-bs-dismiss="modal" aria-label="close">X</a> 
@@ -351,14 +349,74 @@
 
                 <section id="comp-js-02">
                     <h3>JS Component: <em class="highlight">Calendar</em></h3>
-                    <p>A responsive calendar to efficiently manage tasks. With this attractive component you can create new events, delete events, and store all data in local browser storage. Easily change the primary color of the calendar. Go to a specific month of any year. Clearly view which days of the month have events.</p>  
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>  
                     
                     <button type="button" class="for-schools-btn-three bg-yellow"><a href="../pages/calendar.html">Calendar</a></button>
-                      
+                    <section class="sample"></section>  
                     <pre>
                         <code class="language-html">
 &lt;body&gt;
-    &lt;p&gt;Code is here&lt;/p&gt;        
+    &lt;div class="calendar-wrapper"&gt;
+        &lt;div class="calendar-container"&gt;
+            &lt;div class="left"&gt;
+                &lt;div class="calendar"&gt;
+                    &lt;div class="month"&gt;
+                        &lt;i class="fa fa-angle-left prev"&gt;&lt;/i&gt;
+                        &lt;div class="date"&gt;&lt;/div&gt;
+                        &lt;i class="fa fa-angle-right next"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;div class="weekdays"&gt;
+                        &lt;div&gt;sun&lt;/div&gt;
+                        &lt;div&gt;mon&lt;/div&gt;
+                        &lt;div&gt;tue&lt;/div&gt;
+                        &lt;div&gt;wed&lt;/div&gt;
+                        &lt;div&gt;thu&lt;/div&gt;
+                        &lt;div&gt;fri&lt;/div&gt;
+                        &lt;div&gt;sat&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="days"&gt;&lt;/div&gt;
+                    &lt;div class="goto-today"&gt;
+                        &lt;div class="goto"&gt;
+                            &lt;input type="text" placeholder="mmyyyy" class="date-input"&gt;
+                            &lt;button class="goto-btn" type="submit">go</button&gt;
+                        &lt;/div&gt;
+                        &lt;button class="today-btn"&gt;Today&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt; 
+            &lt;div class="right"&gt;
+                &lt;div class="today-date"&gt;
+                    &lt;div class="event-day"&gt;&lt;/div&gt;
+                    &lt;div class="event-date"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="events"&gt;&lt;/div&gt;
+                
+                &lt;div class="add-event-wrapper"&gt;
+                    &lt;div class="add-event-header"&gt;
+                        &lt;div class="title"&gt;
+                            Add Event with 4 digit 24 Hour Time Format
+                        &lt;/div&gt;
+                        &lt;i class="fa fa-times close"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;div class="add-event-body"&gt;
+                        &lt;div class="add-event-input"&gt;
+                            &lt;input type="text" placeholder="Event Name" class="event-name"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="add-event-input"&gt;
+                            &lt;input type="text" placeholder="Event Time From" class="event-time-from"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="add-event-input"&gt;
+                            &lt;input type="text" placeholder="Event Time To" class="event-time-to"&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="add-event-footer"&gt;
+                        &lt;button class="add-event-btn"&gt;Add Event&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;button class="add-event"&gt;&lt;i class="fa fa-plus"&gt; New Event&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/body&gt;
                         </code>
                     </pre>                   
@@ -414,7 +472,8 @@
 
         <!-- For Schools framework -->
         <script src="../scripts/for-schools.js"></script>
-        <script src="../scripts/prism.js"></script>         
+        <script src="../scripts/prism.js"></script>
+        <script src="../scripts/calendar.js"></script>
     </body>
 
 </html>
