@@ -5,6 +5,125 @@
 
 /* ------------------------------------------STYLING = FORMS------------------------------------------*/
 
+#for-schools fieldset{
+  margin: 2em;
+  padding: 1em 2em;  
+  border-radius: 6px;   
+  max-width: 500px;
+  font-size: .8em;
+}
+
+#for-schools legend{
+  font-size: 2em;
+  padding: 0 .25em;  
+  position: relative;
+  top: -20px;
+  left: -4px;
+}
+
+#for-schools label{
+  display: block;
+  margin-top: 1em;
+}
+
+#for-schools .checks label, #for-schools .radioBtns label{
+  margin-top: 0;
+}
+
+#for-schools input, #for-schools textarea{
+  padding: 0.5em;
+  border: solid 1px #999;
+  border-radius: 4px;
+}
+
+#for-schools textarea {
+  min-width: 8em;
+  min-width: 100%;
+}
+
+#for-schools input[type="email"], #for-schools input[type="text"]{
+  width: 15em;
+}
+
+#for-schools .radioBtns p{
+  margin-top: 1em;
+}
+
+#for-schools input[type = "checkbox"] + label {
+  display: inline-block;
+  margin-top: 0;
+}
+
+#for-schools input[type="submit"]{
+  padding: 0.5em 1em;  
+  border: none;
+  font-size: 0.9em;
+  margin-top: 1em;
+  box-shadow: 2px 2px 0 #FFF;
+}
+
+input:focus, textarea:focus{
+  outline: solid 1px #e6d089;
+  border: solid 1px #e6d089;
+  box-shadow: 0 0 3px #e6d089;
+}
+
+#for-schools .checks label{
+  display: inline-block;  
+}
+
+.checks span::before{
+  display: inline-block;
+  font-family: "Font Awesome 6 Free";
+  font-size: 1.5em;
+  content: "\f0c8";
+  color: #e6d089;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
+input[type="checkbox"]{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  margin-left: -1px;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ span:before {
+  content: "\f14a";
+}
+
+#for-schools .radioBtns label{
+  display: inline-block;
+  margin-right: .5em;
+  padding-top: 0.75em;
+}
+
+.radioBtns span::before{
+  display: inline-block;
+  font-family: "Font Awesome 6 Free";
+  font-size: 1em;
+  content: "\f111";
+  color: #e6d089;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
+input[type="radio"]{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: -1px;
+  margin-left: 2px;
+  opacity: 0;
+}
+
+input[type="radio"]:checked ~ span:before {
+  content: "\f192";
+}
+
 
 /* ------------------------------------------STYLING = BUTTONS------------------------------------------*/
 
@@ -30,7 +149,7 @@
 }
 
 .for-schools-btn-four{
-  border: solid 2px hsl(46 65% 32%);
+  border: solid 2px hsl(46 65% 32%);  
   padding: .25em 1em;
   border-radius: .25em;
   cursor: pointer;
