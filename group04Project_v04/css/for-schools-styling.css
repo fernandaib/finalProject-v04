@@ -48,11 +48,11 @@
   
   /* spacing */
   --spacing-0: 0;
-  --spacing-1: .2rem;
-  --spacing-2: .3125rem;
-  --spacing-3: .625rem;
-  --spacing-4: .9375rem;
-  --spacing-5: 1.25rem;
+  --spacing-1: 0.5rem;
+  --spacing-2: 0.75rem;
+  --spacing-3: 1rem;
+  --spacing-4: 1.25rem;
+  --spacing-5: 1.5rem;
 
 }
 
@@ -328,10 +328,11 @@ blockquote p:last-child {
 
 
 /*----- Lists ----- */
-ul                            {list-style: circle inside; }
-ol                            {list-style: decimal inside;}
+ul.unordered-list             {list-style: circle inside; }
+ol.ordered-list               {list-style: decimal inside;}
 ol, ul                        {padding-left: 0;margin-top: 0;}
 ul ul, ul ol, ol ol, ol ul    {margin: 1.5rem 0 1.5rem 3rem;font-size: 85%;}
+li                            {margin-bottom: .25rem; }
 
 
 
@@ -370,8 +371,8 @@ th:last-child, td:last-child                    {padding-right: 0;}
 .responsive-img                          {width: 100%;height: auto;}
 
 /*----- Helper Classes ----- */
-.float-left           {float: left; }
-.float-right          {float: right; }
+.float-left           {float: left !important;; }
+.float-right          {float: right !important; }
 .clearfix             {overflow: auto;}
 .clearfix:after       {content: "";clear:both;display: block;height:0;line-height:0;visibility:hidden;}
 .full-width           {width: 100%;box-sizing: border-box; }
