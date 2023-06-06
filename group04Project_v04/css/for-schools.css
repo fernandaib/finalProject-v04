@@ -398,6 +398,7 @@ input[type="radio"]:checked ~ span:before {
   width: 80%;
   margin: auto;
   text-align: center;
+  z-index: -1;
 }
 
 .for-schools-title-slideshow {
