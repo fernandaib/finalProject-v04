@@ -29,7 +29,8 @@
         <link rel="stylesheet" href="../css/prism.css">
             
         <!-- For Schools framework -->             
-        <link rel="stylesheet" href="../css/for-schools-styling.css">     
+        <link rel="stylesheet" href="../css/for-schools-styling.css">         
+        <link rel="stylesheet" href="../css/for-schools.css">    
               
                       
                                
@@ -71,6 +72,8 @@
                     <li><a href="#styling-img">Images</a></li>
                     <li><a href="#styling-helper">Helper</a></li>
                     <li><a href="#styling-noprint">No-print</a></li>
+                    <li><a href="#styling-marg-pad">Margin and Paddings</a></li>
+                    <li><a href="#styling-colors">Colors</a></li> 
                     <li><a href="#styling-icons">Icons</a></li> 
                     
                 </ul>                    
@@ -891,15 +894,33 @@
 <!----------------- Buttons ----------------->
                 <section class="styling" id="styling-btn">
                     <h3>Buttons</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>    
+                    <p><em class="brand">For Schools</em> holds several types of buttons which fit with user's needs. Their background and text color are based in <em class="brand">For Schools</em> framework which you will find in this page:
+                        <a href="#styling-colors" target="_blank">Background Colors</a>,
+                        <a href="#txt-colors" target="_blank">Text Colors</a>.                     
+                    </p>
+
                     <br>
-                    <a href="#" class="snippet-sample"><p>Click here to see the sample</p></a>
+                    <p>Shadows and borders display here are customizable.</p>
+
+
+                    <section class="sample-btn">
+                        <button type="button" class="for-schools-btn-one bg-orange">One</button>
+                        <button type="button" class="for-schools-btn-two bg-red color-white">Two</button>
+                        <button type="button" class="for-schools-btn-three bg-yellow">Three</button>
+                        <button type="button" class="for-schools-btn-four bg-gold">Four</button>
+                        <button type="button" class="for-schools-btn-five bg-blue color-white">Five</button>
+                        <button type="button" class="for-schools-btn-six bg-accent">Six</button>                        
+                    </section>
+                    
 
                     <pre>
                         <code class="language-html">
-&lt;body&gt;
-    &lt;p&gt;Code is here&lt;/p&gt;        
-&lt;/body&gt;
+&lt;button type="button" class="for-schools-btn-one bg-orange"&gt;One&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-two bg-red color-white"&gt;Two&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-three bg-yellow"&gt;Three&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-four bg-gold"&gt;Four&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-five bg-blue color-white"&gt;Five&lt;/button&gt;
+&lt;button type="button" class="for-schools-btn-six bg-accent"&gt;Six&lt;/button&gt;                                                 
                         </code>
                     </pre>                  
                 </section>
@@ -963,7 +984,7 @@
                         </code>
                     </pre>
                     
-                    <h3>Margins and Paddings</h3>
+                    <h3 class="styling" id="styling-marg-pad">Margins and Paddings</h3>
                     <p>For the spacing utilities, we use the same naming convention as follow:</p>
                     <p>Where property is one of:</p>
                     <ul class="unordered-list display-list">
@@ -1010,7 +1031,11 @@
 
                 </section>
 <!-- Color  -->
-                <h3>Background/ Text Colors</h3>
+                <!-- <section class="styling" id="styling-marg-pad"></section> -->
+                <!-- <section class="styling" id="styling-colors"></section> -->
+
+
+                <h3 class="styling" id="styling-colors">Background/ Text Colors</h3>
                 <section class="sample">
                     <section class="bg-color-sample">
                         <section class="bg-color-inner-sample">
@@ -1063,7 +1088,7 @@
                 <section class="sample">
                     <section class="text-color-sample">
                         <section class="text-color-inner-sample">
-                            <h2>Text Colors</h2>
+                            <h2 id="txt-colors">Text Colors</h2>
                             <section class="colors">
                                 <p class="color-black">.color-black</p>
                                 <p class="color-dark">.color-dark</p>

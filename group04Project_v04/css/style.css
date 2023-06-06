@@ -492,6 +492,29 @@ font-family: 'Source Code Pro', monospace;
     font-weight: bold;   
 }
 
+/* ------------------------------------------STYLING = BUTTONS - SAMPLES------------------------------------------*/
+.sample-btn{
+  margin-top: 1em;
+  border: solid 2px var(--color-hover);
+  border-radius: .5em;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+
+  gap: 1em;
+}
+
+.styling a{
+  text-decoration: none;
+  color: var(--color-bg-m);
+}
+
+.styling a:hover{  
+  color: var(--color-hover);  
+}
 
 
 /* ------------------------------------------MAIN - SAMPLES------------------------------------------*/

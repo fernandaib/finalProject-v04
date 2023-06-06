@@ -2,12 +2,61 @@
    v1.0 | 202306007
    License: none (public domain)
 */
-/* ------------------------------------------BUTTONS------------------------------------------*/
+/* ------------------------------------------STYLING = BUTTONS------------------------------------------*/
+
+.for-schools-btn-one{
+  border: none;
+  padding: .25em 1em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.for-schools-btn-two{
+  border: none;
+  padding: .25em 1em;
+  box-shadow: 5px 5px 3px rgba(123, 123, 123, .5);
+  cursor: pointer;  
+}
+
+.for-schools-btn-three{
+  border: none;
+  padding: .25em 1em;
+  box-shadow: 4px 4px 0 hsl(231 77% 50%);
+  cursor: pointer;
+}
+
+.for-schools-btn-four{
+  border: solid 2px hsl(46 65% 32%);
+  padding: .25em 1em;
+  border-radius: .25em;
+  cursor: pointer;
+}
+
+.for-schools-btn-five{
+  border: none;
+  padding: .25em 1em;
+  border-radius: 1em 0 1em;
+  cursor: pointer;
+}
+
+.for-schools-btn-six{
+  border: solid 3px hsl(231 77% 30%);  
+  padding: 1em;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
 
 
 
-/* ------------------------------------------NAV BAR------------------------------------------*/
+/* ------------------------------------------COMPONENTS = NAV BAR------------------------------------------*/
 .header-for-schools {
   font-family:sans-serif;
   font-size: clamp(1em, 3vw, 1.2em);
@@ -137,7 +186,7 @@
     
 }
 
-/*------------------------------------------JUMBOTRON NO BG PHOTO------------------------------------------*/
+/*------------------------------------------COMPONENTS = JUMBOTRON NO BG PHOTO------------------------------------------*/
 .jumbotron-for-schools{
   height: 100vh;
   display: flex;
@@ -187,7 +236,7 @@
   cursor: pointer;
 }
 
-/*------------------------------------------JUMBOTRON WITH BG PHOTO------------------------------------------*/
+/*------------------------------------------COMPONENTS = JUMBOTRON WITH BG PHOTO------------------------------------------*/
 
 .jumbotron-bg-for-schools{
   height: 100vh;
@@ -219,7 +268,7 @@
   text-shadow: 2px 2px 3px #c0c0c0;
 }
 
-/* ------------------------------------------SLIDE------------------------------------------*/
+/* ------------------------------------------COMPONENTS = SLIDE------------------------------------------*/
 
 body {
   
@@ -259,7 +308,7 @@ body {
 
    
 
-   /* ------------------------------------------NAV------------------------------------------*/
+   /* ------------------------------------------COMPONENTS = NAV------------------------------------------*/
    
    .hamburger-for-schools, .toggleMenu-for-schools{
     display: block;
@@ -291,7 +340,7 @@ body {
     inset;
   } 
   
-   /* ------------------------------------------SLIDE------------------------------------------*/
+   /* ------------------------------------------COMPONENTS = SLIDE------------------------------------------*/
 
    .for-schools-slideshow{
     width: 70%;
