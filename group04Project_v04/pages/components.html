@@ -249,7 +249,10 @@
                                         <a href="#open-modal">Click Here</a> for more information.</p>
                                     </div>
                                     <div class="row my-5">
-                                        <button type="button" class="for-schools-btn-five bg-blue color-white">Five</button>
+                                        <div class="column col-12 text-center">
+                                            <button type="button" class="for-schools-btn-five bg-blue color-white"><a href="#open-modal-btn" class="color-white">Click</a></button>
+                                        </div>
+                                       
                                     </div>
                                 </div>
 
@@ -265,7 +268,17 @@
                                         Explicabo eos velit sapiente sit vero. Illo consequatur alias facilis facere illum excepturi blanditiis, nihil a dolores quae eveniet atque labore accusantium error tenetur deserunt nam dicta quasi in! Quae? </p>                                 
                                     </div>
 
+                                </div>
 
+                                <!-- Hidden modal text -->
+                                <div id="open-modal-btn" class="modal-content">
+                                    <div class="container">
+                                        <a href="#modal-close" title="close" class="modal-close" data-bs-dismiss="modal" aria-label="close">X</a> 
+                                        <h2>Modal Headline</h2>
+                                        <p>Insert any text here in the paragraph tags to display in your modal pop-up.</p>  
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero alias id at aut minus magnam sapiente consequuntur! Veniam deserunt animi nisi ipsum. Itaque nisi pariatur ducimus aspernatur fugiat. Accusantium!
+                                        Explicabo eos velit sapiente sit vero. Illo consequatur alias facilis facere illum excepturi blanditiis, nihil a dolores quae eveniet atque labore accusantium error tenetur deserunt nam dicta quasi in! Quae? </p>                                 
+                                    </div>
                                 </div>
                             </section>
                         </section>
@@ -274,15 +287,32 @@
                     <pre>
                         <code class="language-html">
 &lt;body&gt;
-    &lt;a href="#open-modal"&gt;Click Here&lt;/a&gt; for more information.&lt;/p&gt;
 
-    &lt;div id="open-modal" class="modal-content"&gt;
+    &lt;-- Modal Pop-Up Text Example  --&gt;
+    &lt;p&gt;Write text and add a link that opens up as a modal pop-up
+        &lt;a href="#open-modal-1"&gt;Click Here&lt;/a&gt; for more information.&lt;/p&gt;
+
+    &lt;div id="open-modal-1" class="modal-content"&gt;
         &lt;div class="container"&gt;
             &lt;a href="#modal-close" title="close" class="modal-close" data-bs-dismiss="modal" aria-label="close"&lt;X&gt;&lt;/a&gt;
             &lt;h2&gt;Modal Headline&lt;/h2&gt;
             &lt;p&gt;Insert any text here in the paragraph tags to display in your modal pop-up.&lt;/p&gt;     
         &lt;/div&gt;
-    &lt;/div&gt;   
+    &lt;/div&gt;
+    
+
+    &lt;-- Modal Pop-Up Button Example --&gt;
+    &lt;button type="button" class="for-schools-btn-five bg-blue color-white"&gt;
+        &lt;a href="#open-modal-btn-1" class="color-white"&gt;Click&lt;/a&gt;
+    &lt;button&gt;
+
+    &lt;div id="open-modal-btn-1" class="modal-content"&gt;
+        &lt;div class="container"&gt;
+            &lt;a href="#modal-close" title="close" class="modal-close" data-bs-dismiss="modal" aria-label="close"&lt;X&gt;&lt;/a&gt;
+            &lt;h2&gt;Modal Headline&lt;/h2&gt;
+            &lt;p&gt;Insert any text here in the paragraph tags to display in your modal pop-up.&lt;/p&gt;     
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/body&gt;
                         </code>
                     </pre>                                      
