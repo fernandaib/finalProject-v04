@@ -881,7 +881,7 @@
                     <h3>Forms</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil necessitatibus consequatur voluptas ab modi cumque, vitae a quod? Aperiam, dolores! Et soluta ut tenetur voluptatem velit quia eveniet consectetur.</p>  
                     <br>
-                      
+
 
                     <pre>
                         <code class="language-html">
@@ -963,28 +963,26 @@
                     
                     <p><span class="text-bold">Full-Width: </span> To make element full width, apply the <span class="utility-code color-pink">.full-width</span> to the element's tag.</p>
                     
-                    <h3>Helper</h3>
-                    <section class="sample">
-                        <section class="helper-sample">
-                            <section class="helper-inner-sample">
-                                <h2>Helper Classes</h2>
-                                <h3>Floats</h3>
-                               
-
-
-                            </section>
-                        </section>
-                    </section>
 
                     <pre>
                         <code class="language-html">
 &lt;body&gt;
-    &lt;p&gt;Code is here&lt;/p&gt;        
+    &lt;-- float left --&gt;
+    &lt;div class="float-left"&gt;&lt;/div&gt;
+
+    &lt;-- float right --&gt;
+    &lt;div class="float-right"&gt;&lt;/div&gt;
+
+    &lt;-- clear float --&gt;
+    &lt;div class="clearfix"&gt;&lt;/div&gt;
+
+    &lt;-- full width --&gt;
+    &lt;div class="full-width"&gt;&lt;/div&gt;
 &lt;/body&gt;
                         </code>
                     </pre>
 <!-- Blockquote  -->
-                    <h3>Blockquotes</h3>
+                    <h3>Blockquote</h3>
 
                     <section class="sample">
                         <section class="blockquote-sample">
@@ -994,8 +992,6 @@
                                     <p>Learning HTML and CSS is a lot more challenging than it used to be. Responsive web design adds more layers of complexity to design and develop websites.</p>
                                     <cite>– Jacob Lett</cite>
                                 </blockquote>
-
-
                             </section>
                         </section>
                     </section>
@@ -1010,30 +1006,7 @@
 &lt;/body&gt;
                         </code>
                     </pre>
-<!-- Lists  -->
-                    <h3>Lists</h3>
-                    <p>For the spacing utilities, we use the same naming convention as follow:</p>
 
-                    <section class="sample">
-                        <section class="helper-sample">
-                            <section class="helper-inner-sample">
-                                <h2>Lists</h2>
-                                
-
-
-                            </section>
-                        </section>
-                    </section>
-
-                    <pre>
-                        <code class="language-html">
-&lt;body&gt;
-    &lt;&gt;
-    
-     &lt;&gt;        
-&lt;/body&gt;
-                        </code>
-                    </pre>
 
 <!-- Margins and Paddings  -->
 
@@ -1059,28 +1032,13 @@
                     <p>Where size is one of:</p>
                     <ul class="unordered-list display-list">
                         <li><span class="utility-code color-pink">0</span> - for classes that eliminate the margin or padding by setting it to <span class="utility-code color-pink">0</span></li>
-                        <li><span class="utility-code color-pink">1</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">.2rem (4px)</span></li>
-                        <li><span class="utility-code color-pink">2</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">.3125rem (5px)</span></li>
-                        <li><span class="utility-code color-pink">3</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">.625rem (10px)</span></li>
-                        <li><span class="utility-code color-pink">4</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">.9375rem (15px)</span></li>
-                        <li><span class="utility-code color-pink">5</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">1.25rem (20px)</span></li>
+                        <li><span class="utility-code color-pink">1</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">0.5rem (8px)</span></li>
+                        <li><span class="utility-code color-pink">2</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">0.75rem (12px)</span></li>
+                        <li><span class="utility-code color-pink">3</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">1rem (16px)</span></li>
+                        <li><span class="utility-code color-pink">4</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">1.25rem (20px)</span></li>
+                        <li><span class="utility-code color-pink">5</span> - (by default) for classes that set the margin or padding to <span class="utility-code color-pink">1.5rem (24px)</span></li>
                         <li><span class="utility-code color-pink">auto</span> - for classes that set the margin to <span class="utility-code color-pink">auto</span></li>
                     </ul>
-                    <span class="utility-code color-pink"></span>
-
-
-                    <pre>
-                        <code class="language-html">
-    &lt;body&gt;
-    &lt;p class=""&gt;Code is here&lt;/p&gt;
-    &lt;p class=""&gt;Code is here&lt;/p&gt;
-    &lt;p class=""&gt;Code is here&lt;/p&gt;
-    &lt;p class=""&gt;Code is here&lt;/p&gt;
-    &lt;p class=""&gt;Code is here&lt;/p&gt;
-    &lt;p class=""&gt;Code is here&lt;/p&gt;
-    &lt;/body&gt;
-                        </code>
-                    </pre>     
 
                 </section>
 
@@ -1209,56 +1167,56 @@
                                 <section class="icons">
                                     <div class="container p-3">
                                         <div class="row">
-                                            <div class="column col-3 my-5 text-center">     
+                                            <div class="column col-3 my-4 text-center">     
                                                 <i class="fa-solid fa-person-chalkboard color-teal fs-4"></i>
                                                 <p>Teachers</p>    
                                             </div>
-                                            <div class="column col-3 my-5 text-center">                                 
+                                            <div class="column col-3 my-4 text-center">                                 
                                                 <i class="fa-solid fa-children color-teal fs-4"></i>
                                                 <p>Students</p>
                                             </div>
-                                            <div class="column col-3 my-5 text-center">
+                                            <div class="column col-3 my-4 text-center">
                                                 <i class="fa-solid fa-school-flag color-teal fs-4"></i>
                                                 <p>School Staff</p>
                                             </div>
-                                            <div class="column col-3 my-5 text-center">
+                                            <div class="column col-3 my-4 text-center">
                                                 <i class="fa-solid fa-calendar color-teal fs-4"></i>
                                                 <p>Calendar</p>
                                             </div> 
                                         </div>
                                         <div class="row">
-                                            <div class="column col-3 my-5 text-center">
+                                            <div class="column col-3 my-4 text-center">
                                                 <i class="fa-solid fa-calendar-check color-green fs-4"></i>
                                                 <p>Calendar Item</p>
                                             </div>
-                                            <div class="column col-3 my-5 text-center">
+                                            <div class="column col-3 my-4 text-center">
                                                 <i class="fa-solid fa-futbol color-green fs-4"></i>                                         
                                                 <p>Sports</p>
                                             </div>
-                                            <div class="column col-3 my-5 text-center">
+                                            <div class="column col-3 my-4 text-center">
                                                 <i class="fa-solid fa-masks-theater color-green fs-4"></i>
                                                 <p>Drama</p> 
                                             </div>
-                                            <div class="column col-3 my-5 text-center">
+                                            <div class="column col-3 my-4 text-center">
                                                 <i class="fa-solid fa-music color-green fs-4"></i>
                                                 <p>Music</p>
                                             </div>
                                         </div>   
                                         <div class="row">
-                                            <div class="column col-3 my-5 text-center">
+                                            <div class="column col-3 my-4 text-center">
                                                 <i class="fa-solid fa-book-open color-yellow fs-4"></i>
                                                 <p>Book</p>    
                                             </div>
-                                            <div class="column col-3 my-5 text-center">
+                                            <div class="column col-3 my-4 text-center">
                                                 <i class="fa-solid fa-book-open-reader color-yellow fs-4"></i>                                             
                                                 <p>Reading</p>
                                             </div>
                                         
-                                            <div class="column col-3 my-5 text-center">
+                                            <div class="column col-3 my-4 text-center">
                                                 <i class="fa-solid fa-microscope color-yellow fs-4"></i>
                                                 <p>Science</p>
                                             </div>
-                                            <div class="column col-3 my-5 text-center">
+                                            <div class="column col-3 my-4 text-center">
                                                 <i class="fa-solid fa-calculator color-yellow fs-4"></i>
                                                 <p>Calculator</p>
                                             </div>
@@ -1349,7 +1307,7 @@
                         </code>
                     </pre>            
                 </section>
-
+                </section>
             </article>
 
             <article class="hand-up">
