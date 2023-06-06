@@ -44,7 +44,7 @@
   --fs-03: clamp(2rem, 2.5vw, 3rem);
   --fs-04: clamp(1.5rem, 2vw, 2.5rem); 
   --fs-05: clamp(1rem, 1.5vw, 2rem); 
-  --fs-06: clamp(.5rem, 1vw, 1.5rem);  
+  --fs-06: clamp(.8rem, 1vw, 1.5rem);  
   
   /* spacing */
   --spacing-0: 0;
@@ -270,7 +270,7 @@ input, button, textarea, select              {font: inherit;}
 .color-purple         {color: hsl(var(--clr-purple));}
 
 /*----- Typography ----- */
-h1, h2, h3, h4, h5, h6 {margin: 0;}
+h1, h2, h3, h4, h5, h6 {margin: 0;  font-weight: 400;}
 
 .ff-poppins           {font-family: var(--ff-poppins);}
 .ff-source-sans-pro   {font-family: var(--ff-source-sans-pro);}
@@ -316,16 +316,8 @@ h1, h2, h3, h4, h5, h6 {margin: 0;}
 .address              {letter-spacing: .5px;}
 
 /*----- Blockquote ----- */
-blockquote {
-  border-left: .1rem solid #dadee4;
-  margin-left: 0;
-  padding: .4rem .8rem;
-}
-
-blockquote p:last-child {
-  margin-bottom: 0;
-}
-
+blockquote                    {border-left: .1rem solid #dadee4;margin-left: 0;padding: .4rem .8rem;}
+blockquote p:last-child       {margin-bottom: 0;}
 
 /*----- Lists ----- */
 ul.unordered-list             {list-style: circle inside; }
@@ -333,8 +325,6 @@ ol.ordered-list               {list-style: decimal inside;}
 ol, ul                        {padding-left: 0;margin-top: 0;}
 ul ul, ul ol, ol ol, ol ul    {margin: 1.5rem 0 1.5rem 3rem;font-size: 85%;}
 li                            {margin-bottom: .25rem; }
-
-
 
 
 /*----- Tables ----- */
@@ -351,7 +341,6 @@ th:last-child, td:last-child                    {padding-right: 0;}
 
 /* border table  */
 .table.table-bordered thead tbody               {border-collapse: collapse;}
-.table-bordered th                              {background-color: #4d4949; color:#fff;}
 .table-bordered td, .table-bordered th          {border: 1px solid #ddd; padding:8px} 
 
 /* responsive table  */
@@ -374,7 +363,7 @@ th:last-child, td:last-child                    {padding-right: 0;}
 .float-left           {float: left !important;; }
 .float-right          {float: right !important; }
 .clearfix             {overflow: auto;}
-.clearfix:after       {content: "";clear:both;display: block;height:0;line-height:0;visibility:hidden;}
+.clearfix::after       {content: "";clear:both;display: table;height:0;line-height:0;visibility:hidden;}
 .full-width           {width: 100%;box-sizing: border-box; }
 
 /* Margins 4px 5px 10px 15px 20px */
