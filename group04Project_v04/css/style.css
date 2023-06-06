@@ -272,10 +272,9 @@ font-family: 'Source Code Pro', monospace;
    }
 
   .aside-text{
-    margin-left: 50%;
+    margin-left: 40%;
     padding: 1em;   
-    min-width: 200px;     
-    
+    min-width: 316px; 
   }
 
   .list-title{
