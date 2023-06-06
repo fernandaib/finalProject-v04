@@ -234,6 +234,7 @@
                 <section id="comp-css-03">
                     <h3>CSS Component: <em class="highlight">Modal Pop-up</em></h3>
                     <p>Modal popups are used pretty frequently on the web. Some popular uses of them include driving newsletter sign ups, displaying notifications/alerts, and handling register and login forms. </p> 
+                    <br>
                     <p>Our modal will be generic which means you will be free to use it for whatever purpose you'd like. The modal pop-up will be embedded in a typed link for users to click.  </p>
                         
                     <section class="sample">
@@ -241,15 +242,16 @@
                             <section class="modal-inner-sample">
                                 <h2>Modal Pop-Up</h2>
                                 <p>Write text and add a link that opens up as a modal pop-up.
-                                    <a href="#openModal-about">Click Here</a> for more information.</p>
+                                    <a href="#open-modal">Click Here</a> for more information.</p>
                             
                                 <!-- Hidden modal text -->
-                                <div id="openModal-about" class="modalDialog">
-                                    <div>
-                                        <a href="#modalClose" title="Close" class="modalClose" data-bs-dismiss="modal" aria-label="Close">X</a>
+                                <div id="open-modal" class="modal-content">
+                                    <div class="container">
+                                        <a href="#modal-close" title="close" class="modal-close" data-bs-dismiss="modal" aria-label="close">X</a> 
                                         <h2>Modal Headline</h2>
+                                        <p>Insert any text here in the paragraph tags to display in your modal pop-up.</p>  
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero alias id at aut minus magnam sapiente consequuntur! Veniam deserunt animi nisi ipsum. Itaque nisi pariatur ducimus aspernatur fugiat. Accusantium!
-                                        Explicabo eos velit sapiente sit vero. Illo consequatur alias facilis facere illum excepturi blanditiis, nihil a dolores quae eveniet atque labore accusantium error tenetur deserunt nam dicta quasi in! Quae? </p>
+                                        Explicabo eos velit sapiente sit vero. Illo consequatur alias facilis facere illum excepturi blanditiis, nihil a dolores quae eveniet atque labore accusantium error tenetur deserunt nam dicta quasi in! Quae? </p>                                 
                                     </div>
                                 </div>
                             </section>
@@ -259,12 +261,11 @@
                     <pre>
                         <code class="language-html">
 &lt;body&gt;
-    &lt;p&gt;Write text and add a link that opens up as a modal pop-up.
-    &lt;a href="#openModal-about"&gt;Click Here&lt;/a&gt; for more information.&lt;/p&gt;
+    &lt;a href="#open-modal"&gt;Click Here&lt;/a&gt; for more information.&lt;/p&gt;
 
-    &lt;div id="openModal-about" class="modalDialog"&gt;
-        &lt;div&gt;
-            &lt;a href="#modalClose" title="Close" class="modalClose" data-bs-dismiss="modal" aria-label="Close"&lt;X&gt;&lt;/a&gt;
+    &lt;div id="open-modal" class="modal-content"&gt;
+        &lt;div class="container"&gt;
+            &lt;a href="#modal-close" title="close" class="modal-close" data-bs-dismiss="modal" aria-label="close"&lt;X&gt;&lt;/a&gt;
             &lt;h2&gt;Modal Headline&lt;/h2&gt;
             &lt;p&gt;Insert any text here in the paragraph tags to display in your modal pop-up.&lt;/p&gt;     
         &lt;/div&gt;
