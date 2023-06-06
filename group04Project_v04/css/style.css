@@ -286,6 +286,7 @@ font-family: 'Source Code Pro', monospace;
   .aside-list li a{
     text-decoration: none;
     color: var(--color-text);
+    
   }
 
   .aside-list li a::before{
@@ -313,6 +314,10 @@ font-family: 'Source Code Pro', monospace;
 
   .aside-hide{
     display: none;
+  }
+
+  .aside-text ul{
+    list-style-type: none;
   }
  
 
