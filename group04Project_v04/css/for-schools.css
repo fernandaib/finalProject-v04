@@ -215,6 +215,33 @@
   text-shadow: 2px 2px 3px #c0c0c0;
 }
 
+/* ------------------------------------------SLIDE------------------------------------------*/
+
+.for-schools-title-slideshow {
+  font-size: 2em;
+  
+  margin-bottom: .5em;;
+}
+
+.for-schools-slideshow {
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+
+.for-schools-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.for-schools-slideshow img.active {
+  opacity: 1;
+}
+
+
 
 
 
