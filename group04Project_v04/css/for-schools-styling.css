@@ -483,6 +483,14 @@ th:last-child, td:last-child                    {padding-right: 0;}
 
 
 /*----- Calendar JavaScript Component ----- */
+.calendar-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 8px;
+ 
+}
 
 /* a custom scroll bar */
 ::-webkit-scrollbar { width: 5px;}
