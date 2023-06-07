@@ -1,0 +1,44 @@
+
+.jumbotron-bg-inner-for-schools {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+
+
+}
+
+footer          {background-color:  #03202a; color:#fff; }
+.footer-col a { color: rgba(0,0,0,0.75);}
+.content {height: 80vh;background: #ccc;}
+.footer-content-wrapper {width: 80%;margin: 1em auto;  }
+.footer-col {padding: 0.5em 0.25em 0.5em 1.5em;box-sizing: border-box;border-right: solid 1px #bbb;}
+.footer-col:last-child {border: none;}
+
+.flt:last-child:after {content: " "; visibility: hidden; display: block; height: 1em; clear: both;}  
+
+.footer-col a {display: block;margin: 0.3em 0;}
+.newsletter p   {overflow-wrap: break-word;}
+#for-schools input{min-width: 100%;}
+#for-schools input[type="email"], #for-schools input[type="text"] {width:max-content }
+
+/* --------------------------------- */
+/* Media Queries                     */
+/* --------------------------------- */
+
+/*----- Extra-Small devices (portrait phones, less than 576px) ----- */
+@media (max-width: 575px) { 
+    .footer-col {border: none; margin: 10px}
+ }
+
+/*----- Small devices (landscape phones, 576px up to 767px) ----- */
+@media (max-width: 767px) {  }
+
+/*----- Medium devices (tablets, 769px up to 991 px) ----- */ 
+@media (max-width: 991px) {  }
+
+/*----- Large devices (desktops, 992px to up 1199px) ----- */
+@media (max-width: 1199px) {  }
+
+/*----- X-Large devices (large desktops, 1200px up to 1400px) ----- */ 
+@media (max-width: 1400px) {  
+    #for-schools input{min-width: 80%;}
+}
