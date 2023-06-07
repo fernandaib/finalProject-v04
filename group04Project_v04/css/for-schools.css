@@ -369,6 +369,7 @@ input[type="radio"]:checked ~ span:before {
   background-image: url(../images/jumbotronImg.jpg); 
   background-repeat: no-repeat;  
   background-position: center; 
+  background-size: cover;
 }
 
 .jumbotron-bg-for-schools .jumbotron-bg-inner-for-schools{
