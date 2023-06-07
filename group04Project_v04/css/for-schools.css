@@ -396,7 +396,7 @@ input[type="radio"]:checked ~ span:before {
 .for-schools-body-slideshow {
   position: relative;
   padding: 3em;
-  width: 80%;
+  min-width: 700px;
   margin: auto;
   text-align: center;
   z-index: -1;
