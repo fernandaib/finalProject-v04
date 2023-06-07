@@ -396,10 +396,11 @@ input[type="radio"]:checked ~ span:before {
 .for-schools-body-slideshow {
   position: relative;
   padding: 3em;
-  min-width: 700px;
+  min-width: 700px; 
   margin: auto;
   text-align: center;
   z-index: -1;
+    
 }
 
 .for-schools-title-slideshow {
@@ -416,9 +417,10 @@ input[type="radio"]:checked ~ span:before {
 .for-schools-slideshow img {
   position: absolute;
   top: 0;
-  left: 0;
+/*  left: 0;*/
   opacity: 0;
   transition: opacity 1s ease-in-out;
+    
 }
 
 .for-schools-slideshow img.active {
@@ -466,10 +468,56 @@ input[type="radio"]:checked ~ span:before {
   
    /* ------------------------------------------COMPONENTS = SLIDE------------------------------------------*/
 
-   .for-schools-slideshow{
-    width: 80%;
-    margin-left: 0;
-    margin: auto;
+  .for-schools-body-slideshow{
+    min-width: 500px;
+  }  
+  
+  .for-schools-slideshow img{
+      width: 420px;
   }
    
- }
+}
+
+/*================================================ BIG MOBILE SIZE ================================================*/
+
+@media screen and (max-width: 500px){
+  .for-schools-body-slideshow {
+      min-width: 350px;
+      margin: auto;
+  }
+  
+  .for-schools-slideshow img{
+       width: 320px;
+   }
+   
+}
+
+/*================================================ SMALL MOBILE SIZE ================================================*/
+
+@media screen and (max-width: 350px){
+  .for-schools-body-slideshow {
+      min-width: 300px;
+      
+      
+  }
+  
+  .for-schools-slideshow img{
+       width: 200px;
+   }
+   
+}
+
+/*================================================ TINY MOBILE SIZE ================================================*/
+
+@media screen and (max-width: 300px){
+  .for-schools-body-slideshow {
+      min-width: 280px;
+      
+      
+  }
+  
+  .for-schools-slideshow img{
+       width: 180px;
+   }
+   
+}
